@@ -1,0 +1,32 @@
+// Consistent interface glyphs: 24px canvas, rounded 1.7px strokes.
+const paths={
+ 'simulador-cdc':'<rect x=4 y=2 width=16 height=20 rx=2/><path d="M8 7h8M8 11h2m4 0h2M8 15h2m4 0h2M8 19h2m4 0h2"/>',
+ chat:'<path d="M21 11a8 8 0 0 1-8 8H6l-4 3V11a9 9 0 0 1 18-3M7 10h8M7 14h5"/>',
+ print:'<path d="M6 9V3h12v6M6 18H3V9h18v9h-3M6 14h12v7H6zM17 12h1"/>',
+ edit:'<path d="m16 3 5 5M4 15 16 3a3.5 3.5 0 0 1 5 5L9 20l-6 1 1-6Z"/>',
+ trash:'<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/>',
+ sale:'<rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M2 9a4 4 0 0 0 4-4m12 0a4 4 0 0 0 4 4M2 15a4 4 0 0 1 4 4m12 0a4 4 0 0 1 4-4"/>',
+
+ eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
+ painel:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="11" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="18" width="7" height="3" rx="1"/>',
+ leads:'<path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2v-10A8.5 8.5 0 0 1 18 7"/><path d="M8 10h5M8 14h8M20 2v6M17 5h6"/>',
+ users:'<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"/>',
+ vehicles:'<path d="m5 7 2-3h10l2 3 2 5v7h-3v-3H6v3H3v-7l2-5ZM5 8h14M3 12h18M6 13v1m12-1v1"/>',
+ avaliacoes:'<rect x="5" y="4" width="15" height="18" rx="2"/><rect x="9" y="2" width="7" height="4" rx="1"/><path d="m9 13 2 2 5-5M9 19h7"/>',
+ 'seminovos-avaliacoes':'<rect x="5" y="4" width="15" height="18" rx="2"/><rect x="9" y="2" width="7" height="4" rx="1"/><path d="m9 13 2 2 5-5M9 19h7"/>',
+ 'seminovos-captacoes':'<path d="M4 11V5a2 2 0 0 1 2-2h7l7 7-9 9a2 2 0 0 1-3 0l-4-4a2 2 0 0 1 0-3l9-9M8 7h.01"/><path d="M15 17h6m-3-3v6"/>',
+ 'seminovos-estoque':'<path d="M3 9V5l9-3 9 3v4M3 9h18v12H3V9ZM8 21v-6h8v6M3 12h18"/>',
+ 'seminovos-catalogo':'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 14h4M7 17h7m5-4h.01"/>',
+ 'seminovos-gestao':'<path d="M4 20V11M9 20V6M14 20v-9M19 20V3M2 20h20"/><path d="m3 8 5-3 5 3 6-5"/>',
+ 'seminovos-autoavaliacao':'<circle cx="12" cy="12" r="9"/><path d="M8 12h8m-4-4v8M4 19l4-3"/>',
+ assessments:'<path d="M4 4h16v16H4zM8 4v5h8V4M8 15h8M12 11v8m-3-3 3 3 3-3"/>',
+ sales:'<path d="M4 4v16h17M7 14l5-5 4 3 5-7M16 5h5v5"/>',
+ companies:'<path d="M4 22V4l11-2v20M15 8h5v14M2 22h20M8 7h3M8 11h3M8 15h3M8 19h3"/>',
+ estrutura:'<rect x="8" y="2" width="8" height="6" rx="1.5"/><rect x="2" y="16" width="7" height="6" rx="1.5"/><rect x="15" y="16" width="7" height="6" rx="1.5"/><path d="M12 8v4M5.5 16v-4h13v4"/>',
+ administradoras:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 14h4M7 17h7"/>',
+ catalogo:'<path d="M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3V4ZM12 6v16M6 9h3M15 9h3M6 13h3M15 13h3"/>',
+ 'catalogo-cotas':'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h5m4 0h1"/>',
+ reservas:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4m4-1 2 2 3-4"/>',
+ perfil:'<circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/>',
+ sair:'<path d="M10 3H4v18h6M9 12h13m-5-5 5 5-5 5"/>'};
+export const navIcon=key=>`<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[key]||paths.estrutura}</svg>`;

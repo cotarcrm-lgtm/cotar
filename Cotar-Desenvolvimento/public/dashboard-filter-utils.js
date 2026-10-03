@@ -1,0 +1,9 @@
+export function matchesDashboard(row,dash,data={},lookups={}){
+ const user=[...(data.users||[]),...(lookups.users||[])].find(u=>u.id===(row.userId||row.sellerId||row.id))||{},store=[...(data.stores||[]),...(lookups.stores||[])].find(s=>s.id===(row.storeId||user.storeId))||{};
+ const model=row.model||row.consortium?.model||row.leadSnapshot?.model||(data.leads||[]).find(l=>l.id===row.leadId)?.model||(data.vehicles||[]).find(v=>v.id===row.vehicleId)?.name||row.interest;
+ return (!dash.region||(row.regionId||store.regionId||user.regionId)===dash.region)&&(!dash.store||(row.storeId||user.storeId)===dash.store)&&(!dash.team||validDashboardTeam(row,user,store,data,lookups)===dash.team)&&(!dash.user||(row.userId||row.sellerId||row.id)===dash.user)&&(!dash.modality||(row.modality|| (row.vehicleId?'Seminova':''))===dash.modality)&&(!dash.status||row.status===dash.status)&&(!dash.model||model===dash.model);
+}
+
+export function dashboardValue(row,key,data={},lookups={}){const user=[...(data.users||[]),...(lookups.users||[])].find(u=>u.id===(row.userId||row.sellerId||row.id))||{},store=[...(data.stores||[]),...(lookups.stores||[])].find(s=>s.id===(row.storeId||user.storeId))||{};return ({region:row.regionId||store.regionId||user.regionId,store:row.storeId||user.storeId,team:validDashboardTeam(row,user,store,data,lookups),user:row.userId||row.sellerId||row.id,model:row.model||row.consortium?.model||row.leadSnapshot?.model||(data.leads||[]).find(l=>l.id===row.leadId)?.model||(data.vehicles||[]).find(v=>v.id===row.vehicleId)?.name||row.interest})[key]??row[key];}
+
+function validDashboardTeam(row,user,store,data,lookups){const id=row.teamId||user.teamId,team=[...(data.teams||[]),...(lookups.teams||[])].find(t=>t.id===id);if(team&&store.id&&team.storeId&&team.storeId!==store.id)return '';if(!row.teamId&&row.storeId&&user.storeId&&row.storeId!==user.storeId)return '';return id;}

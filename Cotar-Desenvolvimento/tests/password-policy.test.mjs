@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {passwordRule,hashPassword,verifyPassword} from '../server/auth.js';
+test('senhas novas exigem 8 caracteres e os quatro tipos',async()=>{for(const p of ['Ab1!abc','abc123!@','ABC123!@','Abcdef!@','Abcdef12','Abcdef1 '])assert.throws(()=>passwordRule(p));for(const p of ['Abcd12!@','Senha#2026'])assert.doesNotThrow(()=>passwordRule(p));const hash=await hashPassword('Abcd12!@');assert.equal(await verifyPassword('Abcd12!@',hash),true);assert.equal(await verifyPassword('Abcd12!!',hash),false);});

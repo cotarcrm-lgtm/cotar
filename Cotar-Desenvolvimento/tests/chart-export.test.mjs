@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {JSDOM} from 'jsdom';import {downloadChart,chartDownloadButton} from '../public/chart-export.js';
+test('exportação PNG preserva título, filtros e captura sem incluir botão',async()=>{
+ const dom=new JSDOM('<section><h2>Ranking por equipe</h2>'+chartDownloadButton('Ranking por equipe')+'<table><tr><td>Equipe Alfa</td><td>4</td></tr></table></section>');const old=globalThis.document;globalThis.document=dom.window.document;
+ try{let saved;await downloadChart(document.querySelector('section'),{context:'01/09/2026 a 30/09/2026 · Loja: Cruz das Almas',at:new Date('2026-10-01T05:00:00Z'),render:async(panel,options)=>{assert.equal(options.scale,2);assert(options.ignoreElements(panel.querySelector('button')));assert(!options.ignoreElements(panel.querySelector('table')));const clone=panel.cloneNode(true);options.onclone(document,clone);assert.match(clone.textContent,/Loja: Cruz das Almas/);assert.match(clone.textContent,/Capturado em/);assert.match(clone.textContent,/Equipe Alfa/);return {toBlob(cb,type){assert.equal(type,'image/png');cb(new Blob(['png'],{type}))}}},save:async(blob,name)=>{saved={blob,name}}});assert.equal(saved.blob.type,'image/png');assert.match(saved.name,/^cotar-ranking-por-equipe-.*\.png$/);
+ await assert.rejects(()=>downloadChart(document.querySelector('section'),{render:async()=>({toBlob(cb){cb(null)}}),save:()=>assert.fail('não deve baixar imagem inválida')}),/Não foi possível gerar/);
+ }finally{globalThis.document=old;dom.window.close()}
+});

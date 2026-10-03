@@ -1,0 +1,607 @@
+/* COTAR corporate foundation. Load after feature styles; shared tokens and
+   explicit component contracts replace screen-specific visual exceptions. */
+:root {
+  --crm-canvas:#e9edf2; --crm-surface:#fff; --crm-ink:#26313c;
+  --crm-muted:#637180; --crm-border:#cbd4dd; --crm-soft:#f7f9fb;
+  --crm-action:#303b47; --crm-brand:#fad23b; --crm-focus:#667b90;
+  --crm-radius:10px; --crm-shadow:0 2px 8px #24334510;
+  --crm-success:#206843; --crm-danger:#b42332; --crm-warning:#965b09;
+}
+body {background:var(--crm-canvas);color:var(--crm-ink);line-height:1.5}
+#app,dialog,.public-catalogue main {--yellow:var(--crm-action);--text:var(--crm-ink);--muted:var(--crm-muted);--border:var(--crm-border)}
+:where(#app,dialog,.public-catalogue main) * {box-sizing:border-box}
+:where(#app,dialog,.public-catalogue main) :is(h1,h2,h3,h4) {color:var(--crm-ink);line-height:1.3;letter-spacing:-.025em}
+#app h1 {font-size:clamp(1.4rem,2vw,1.8rem);font-weight:650;margin-bottom:6px}
+#app h2,dialog h2 {font-size:1.125rem;font-weight:650}
+#app h3,dialog h3 {font-size:1rem;font-weight:650}
+#app .heading {gap:16px;align-items:center;margin-bottom:22px}
+#app .heading .sub,#app .heading p:not(.eyebrow),#app .view-note {font-size:.875rem;color:var(--crm-muted);line-height:1.55}
+#app .eyebrow,#app .used-overline {font-size:.75rem;letter-spacing:.07em;font-weight:600;color:var(--crm-muted)}
+#app .panel,#app .used-panel,#app .profile-panel,#app .analytical-panel {
+  border:1px solid var(--crm-border);border-radius:var(--crm-radius);background:var(--crm-surface);box-shadow:var(--crm-shadow)
+}
+#app .panel-head {padding:16px 20px;border-bottom:1px solid #e8edf1;gap:12px;flex-wrap:wrap}
+#app .panel-head h2 {margin:0;font-size:1rem}
+#app .panel-head .sub,#app #count {font-size:.8125rem;color:var(--crm-muted)}
+:where(#app,dialog,.public-catalogue main) :is(label,.field>label) {font-size:.875rem;line-height:1.45;color:#465461;font-weight:500}
+:where(#app,dialog,.public-catalogue main) :is(input,select,textarea):not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]):not([type=hidden]) {
+  min-width:0;max-width:100%;min-height:38px;border:1px solid var(--crm-border);border-radius:7px;background:#fff;
+  color:var(--crm-ink);font:inherit;font-size:.875rem;line-height:1.4;padding:8px 10px;box-shadow:none
+}
+:where(#app,dialog,.public-catalogue main) textarea {min-height:88px!important;resize:vertical}
+:where(#app,dialog,.public-catalogue main) input::placeholder {color:#7b8793;opacity:1}
+:where(#app,dialog,.public-catalogue main) input[readonly] {background:var(--crm-soft)!important;color:#596775}
+:where(#app,dialog,.public-catalogue main) :is(input,select,textarea):focus-visible {
+  outline:2px solid var(--crm-focus);outline-offset:2px;border-color:var(--crm-focus)
+}
+:where(#app,dialog,.public-catalogue main) :is(button,a,summary):focus-visible {outline:2px solid var(--crm-focus);outline-offset:3px}
+:where(#app,dialog,.public-catalogue main) input:is([type=checkbox],[type=radio],[type=range]) {accent-color:var(--crm-action)}
+:where(#app,dialog,.public-catalogue main) input[type=range] {width:100%;min-width:0;min-height:32px;cursor:pointer}
+#app .btn,dialog .btn,.public-catalogue .btn {
+  min-height:38px;padding:8px 14px;border:1px solid var(--crm-action);border-radius:7px;background:var(--crm-action);
+  color:#fff;font-size:.875rem;font-weight:600;line-height:1.4;box-shadow:none;display:inline-flex;align-items:center;justify-content:center;gap:8px
+}
+#app .btn:hover,dialog .btn:hover,.public-catalogue .btn:hover {background:#202d39;border-color:#202d39}
+#app .btn.secondary,dialog .btn.secondary,.public-catalogue .btn.secondary {background:#fff;color:#445360;border-color:var(--crm-border)}
+#app .btn.secondary:hover,dialog .btn.secondary:hover {background:#f2f5f8;border-color:#b9c5cf}
+#app .btn.danger,dialog .btn.danger {color:var(--crm-danger);background:#fff;border-color:#e6bec4}
+:where(#app,dialog) button:disabled {opacity:.55;cursor:wait}
+#app .filters,#app .dashboard-filters,#app .capture-filters,#app .catalogue-filters,#app .reserva-toolbar,#app .stock-filters,#app .stock-more-filters {
+  background:#fff;border:1px solid var(--crm-border);border-radius:var(--crm-radius);padding:14px;gap:12px;margin-bottom:16px;align-items:end
+}
+#app :is(.filters,.dashboard-filters,.capture-filters,.catalogue-filters,.reserva-toolbar,.stock-filters,.stock-more-filters) label {font-size:.875rem;font-weight:500;color:#52616f;min-width:0;gap:6px}
+#app :is(.filters,.dashboard-filters,.capture-filters,.catalogue-filters,.reserva-toolbar,.stock-filters,.stock-more-filters) :is(input,select) {font-size:.875rem;min-height:38px;max-width:100%;width:100%}
+#app .dashboard-lead-filters {grid-template-columns:repeat(5,minmax(0,1fr))}
+#app .capture-filters {grid-template-columns:repeat(4,minmax(0,1fr))}
+#app .capture-filters .capture-refresh {height:38px;min-width:38px;justify-self:end}
+#app .filters {display:flex;flex-wrap:wrap}
+#app .filters>input {flex:2 1 220px;width:auto}
+#app .filters>select {flex:1 1 160px;width:auto}
+#app .info-banner {background:#edf2f6;border:1px solid #dce5ed;border-left:3px solid #748b9e;color:#475c6d;border-radius:7px;font-size:.875rem;padding:12px 16px;line-height:1.55}
+#app .table-wrap,#app .reserva-list-wrap,#app .used-stock-list,#app .used-captures-list {overflow-x:auto;max-width:100%;overscroll-behavior-inline:contain}
+#app :is(.compact-records,.compact-leads,.reserva-management-table) {font-size:.875rem}
+#app :is(.compact-records,.compact-leads,.reserva-management-table) th {background:var(--crm-soft);color:#657381;font-weight:600;font-size:.75rem;letter-spacing:.045em;padding:12px 16px;border-bottom:1px solid var(--crm-border)}
+#app :is(.compact-records,.compact-leads,.reserva-management-table) td {padding:14px 16px;border-color:#e8edf1;line-height:1.5;vertical-align:middle}
+#app :is(.compact-records,.compact-leads,.reserva-management-table) tbody tr:hover {background:#f8fafc}
+#app :is(.compact-records,.compact-leads) :is(strong,.lead-client-name) {font-size:.875rem;font-weight:600;color:var(--crm-ink)}
+#app :is(.compact-records,.compact-leads) small,#app .record-label {font-size:.75rem;line-height:1.5;color:var(--crm-muted)}
+#app .record-cell {gap:6px}
+#app :is(.badge,.temperature,.capture-status-select) {font-size:.8125rem;font-weight:600;border-radius:6px;line-height:1.45}
+#app .lead-icon-action,#app .capture-action-trigger,#app .stock-menu-trigger {border-radius:7px;min-width:36px;min-height:36px;background:#fff;border:1px solid var(--crm-border);color:#526371}
+#app :is(.capture-action-menu,.stock-options-menu),.record-action-menu {border:1px solid var(--crm-border);border-radius:9px;box-shadow:0 8px 24px #2033441a;padding:6px;background:#fff}
+#app :is(.capture-action-menu,.stock-options-menu) button {font-size:.875rem;min-height:38px}
+#app .view-switch,#app .situation-tabs {background:#e9eef2;border-radius:8px;padding:4px;gap:4px}
+#app .view-switch button,#app .situation-tabs button {font-size:.875rem;border-radius:6px;min-height:36px;padding:7px 12px}
+#app .view-switch button.selected,#app .situation-tabs button.selected {background:#fff;color:var(--crm-ink);box-shadow:0 1px 4px #27384a12}
+#app .metric {padding:14px 16px;border:1px solid var(--crm-border);border-radius:var(--crm-radius);box-shadow:var(--crm-shadow);border-top:1px solid var(--crm-border)}
+#app .metric label {font-size:.875rem;min-height:0;font-weight:500;color:var(--crm-muted);line-height:1.4}
+#app .metric strong {font-size:1.55rem;font-weight:650;line-height:1.25;margin:8px 0 4px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+#app .metric small {font-size:.75rem;min-height:0;line-height:1.5;color:var(--crm-muted)}
+#app .metric-more {font-size:.75rem;margin-top:10px;color:#617487}
+#app .analytics-grid,#app .seller-grid {gap:16px}
+#app .analytical-panel {padding:20px}
+#app .analysis-bar b,#app .chart-bar,#app .funnel-stage {background:#1a1a1a}
+#app .funnel-stage {color:#fff}
+#app .analysis-ranking button {padding:12px 0;font-size:.875rem}
+#app .analysis-all {background:#eef2f6;color:#435b6e;border:1px solid #dce5ec;font-size:.875rem;font-weight:600}
+#app .stock-alerts .metric,#app .seller-alert {background:#f6f8fa;border-color:var(--crm-border)}
+#app .agenda-card {border-radius:8px;border-color:var(--crm-border);box-shadow:var(--crm-shadow)}
+#app .kanban-column {background:#edf1f5}
+#app .calendar-day.selected {background:#e9f0f6;box-shadow:inset 0 0 0 2px #73899c}
+#app .calendar-day>span {background:#eef2f6;color:#465f73}
+#app .empty,#app .view-empty,#app .used-captures-empty {font-size:.875rem;line-height:1.6;color:var(--crm-muted);padding:32px 20px}
+#app .form-note,dialog .form-note,#app .used-hint {font-size:.8125rem;line-height:1.6;color:var(--crm-muted)}
+dialog {border:1px solid var(--crm-border);border-radius:12px;box-shadow:0 24px 80px #15283930;max-height:calc(100dvh - 32px);max-width:calc(100vw - 24px)}
+dialog::backdrop {background:#17263388;backdrop-filter:blur(2px)}
+dialog .dialog-head {background:#fff;border-bottom:1px solid #e8edf1;padding:18px 22px}
+dialog .dialog-body {padding:20px 22px}
+dialog .form-grid,dialog .sale-section-fields {gap:16px}
+dialog .sale-form-section {padding:18px;background:#fff;border:1px solid var(--crm-border);border-radius:9px}
+dialog .sale-form-section h3 {font-size:1rem;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid #e8edf1}
+dialog .sale-form-sections {gap:16px}
+dialog .sale-document {border-radius:8px;padding:14px;background:var(--crm-soft);border:1px solid var(--crm-border);min-width:0}
+dialog .sale-document>label:first-child {display:block;min-height:40px;font-size:.875rem;margin-bottom:10px}
+:where(#app,dialog) .attachment-picker {border-color:var(--crm-border);background:#fff;color:#465969;border-radius:7px;font-size:.875rem;min-height:38px}
+:where(#app,dialog) .attachment-picker:hover {background:#edf2f6;border-color:#aebeca}
+:where(#app,dialog) .attachment-picker:focus-within {outline:2px solid var(--crm-focus);outline-offset:2px}
+:where(#app,dialog) .sale-document-status {font-size:.8125rem;margin-top:10px;overflow-wrap:anywhere}
+#app .used-toolbar {align-items:end;gap:12px;padding:14px;border:1px solid var(--crm-border);border-radius:9px;background:#fff}
+#app .used-toolbar .btn {align-self:end}
+#app .used-steps {gap:8px;grid-template-columns:repeat(5,minmax(0,1fr));margin:18px 0}
+#app.used-evaluation-stage .used-stage-nav button,#app .used-steps button {font-size:.875rem;padding:10px 12px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;background:#fff;color:#657481;min-height:42px}
+#app .used-steps button b {margin:0;font-weight:600}
+#app .used-steps button.active {background:var(--crm-action);border-color:var(--crm-action);color:#fff}
+#app .used-steps button.used-step-done:not(.active) {background:#f3f8f5;border-color:#cbded2;color:#286347}
+#app .used-actions {gap:12px;align-items:center;padding-top:16px;margin-top:20px;border-top:1px solid var(--crm-border);flex-wrap:wrap}
+#app .used-checklist-title,#app .used-checklist-name,#app .used-checklist-label {font-size:.875rem;line-height:1.45;min-width:0;overflow-wrap:anywhere}
+#app .used-checklist-items .used-checklist-row {grid-template-columns:minmax(100px,1.1fr) minmax(105px,.8fr) minmax(100px,1fr) minmax(100px,.8fr);gap:10px;padding:10px;background:#fff;border:1px solid var(--crm-border)}
+#app .used-checklist-items .used-checklist-row label {grid-column:auto;grid-row:auto;min-width:0}
+#app .used-checklist-items .used-checklist-row :is(input,select) {font-size:.875rem;height:38px;min-height:38px;padding:7px 8px;width:100%;max-width:100%}
+#app .used-checklist-items .used-checklist-row input::placeholder {font-size:.8125rem}
+#app .used-checklist-row .used-item-indicator {flex:none}
+#app .used-checklist-row.is-complete {background:#fff}
+#app .used-query-name,#app .used-upload,#app .used-attachment {font-size:.875rem;font-weight:500}
+#app .used-query-check {flex-shrink:0}
+#app .used-total-footer,#app .used-closing-highlight {background:#f0f4f7;border:1px solid #dce5ec;border-radius:9px;color:var(--crm-ink)}
+#app .used-closing-grid {gap:16px;margin-bottom:24px}
+#app .used-closing-line {padding:10px 0;font-size:.875rem;gap:12px}
+#app .used-closing-line strong,#app .capture-values strong {font-variant-numeric:tabular-nums;font-size:.9375rem}
+#app .capture-hero-side .capture-checklist .capture-checklist-item {grid-template-columns:minmax(0,1fr) minmax(105px,auto) minmax(85px,auto);gap:10px;align-items:center;padding:10px}
+#app .capture-hero-side .capture-checklist-item>strong,#app .capture-hero-side .capture-checklist-item>span:last-of-type {font-size:.875rem;line-height:1.5}
+#app .capture-hero-side .capture-checklist-item>.checklist-condition {font-size:.75rem;padding:5px 7px}
+#app .capture-financial-card,#app .capture-personal-card,#app .capture-hero-side>section {border:1px solid var(--crm-border);border-radius:var(--crm-radius);padding:18px}
+#app .capture-facts {gap:16px}
+#app .capture-facts dt,#app .capture-facts small {font-size:.75rem;color:var(--crm-muted)}
+#app .capture-facts dd,#app .capture-facts strong {font-size:.875rem;line-height:1.5;overflow-wrap:anywhere}
+#app .used-stock-row,#app .used-capture-row {font-size:.875rem;padding-top:14px;padding-bottom:14px}
+#app .used-stock-row :is(select,strong),#app .used-capture-row select {font-size:.875rem}
+#app .used-stock-row small,#app .used-stock-row .capture-primary a {font-size:.75rem}
+#app .honda-card,#app .reserva-catalog-card {border:1px solid var(--crm-border);border-radius:12px;box-shadow:var(--crm-shadow);overflow:hidden;display:flex;flex-direction:column}
+#app .honda-photo,#app .reserva-catalog-photo,.public-catalogue :is(.honda-photo,.reserva-catalog-photo) {background:#fff;min-height:200px;display:flex;align-items:center;justify-content:center}
+:where(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo) img {object-fit:contain;mix-blend-mode:normal;max-width:100%}
+#app .honda-card-body,#app .reserva-catalog-body {padding:18px;display:flex;flex-direction:column;flex:1;min-width:0}
+#app .honda-card h3,#app .reserva-catalog-card h3 {font-size:1.125rem;font-weight:650;line-height:1.35}
+#app .honda-price strong,#app .reserva-installments strong {font-size:1.65rem;color:var(--crm-ink);font-variant-numeric:tabular-nums}
+#app .reserva-bid {background:#f0f4f7;border:1px solid #dce5ec;border-radius:8px}
+#app .reserva-bid strong,#app .reserva-bid b {font-size:1rem;color:#3d5366;font-variant-numeric:tabular-nums}
+#app .reserva-card-actions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto;padding-top:16px}
+#app .reserva-card-actions .btn {min-height:40px;font-size:.8125rem;padding:8px}
+#app .hc-cash-form {display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+#app .hc-cash-form label {flex:1 1 100%;min-width:0}
+#app .hc-cash-form input {width:100%}
+#app .hc-cash-form button {flex:1 1 100%;width:100%;min-height:44px;align-self:end}
+.hc-compare-panel,.reserva-compare section {background:#fff;border:1px solid var(--crm-border);border-radius:10px;padding:20px!important;min-width:0}
+.hc-compare-panel>h3,.reserva-compare section>h3 {font-size:1.125rem;padding-bottom:12px;margin-bottom:18px;border-bottom:1px solid #e6ecf1}
+.hc-compare-metric {background:#f4f7fa;padding:14px;border:1px solid #e0e7ee;border-radius:8px}
+.hc-compare-metric span {font-size:.875rem;color:#526577}
+.hc-compare-metric strong {font-size:1.5rem;font-variant-numeric:tabular-nums;color:var(--crm-ink)}
+.hc-compare-list div {padding:10px 0;border-bottom:1px solid #e9eef2;gap:12px;align-items:baseline}
+.hc-compare-list dt,.hc-compare-list dd {font-size:.875rem;line-height:1.5}
+.hc-compare-list dd {font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.hc-consortium-total,.reserva-sim-total {background:#edf2f6;padding:14px!important;border-radius:8px}
+.reserva-sim-installment {background:#edf3f8!important;border:1px solid #ccdce8!important;color:#344f65!important}
+.reserva-sim-term {background:#f1f3f5!important;border:1px solid #d8dfe5!important;color:#465563!important}
+.reserva-sim-output strong {font-size:1.25rem;font-variant-numeric:tabular-nums}
+.reserva-simulator .reserva-slider-intro {min-height:104px;margin-bottom:0;align-items:start}
+.reserva-simulator .reserva-range-label,.reserva-simulator .hc-compare-slider-label {min-height:48px;margin-top:12px;white-space:normal!important;flex-wrap:wrap!important;align-content:center}
+.hc-compare-difference.hc-savings,.reserva-bid-savings {background:#edf7f0;border:1px solid #c6dfcf;border-radius:9px;color:#236342;padding:18px}
+.hc-compare-difference strong,.reserva-bid-savings strong {font-size:1.5rem;font-variant-numeric:tabular-nums}
+.hc-note,.reserva-sim-note {font-size:.8125rem;line-height:1.6;color:var(--crm-muted)}
+#app .chat-workspace {border:1px solid var(--crm-border);border-radius:10px;box-shadow:var(--crm-shadow)}
+#app .chat-person strong,#app .chat-bubble p {font-size:.875rem;line-height:1.55}
+#app .chat-person small,#app .chat-file-hint {font-size:.75rem;color:var(--crm-muted)}
+#app .chat-person.selected {background:#edf2f6;border-color:#d4dfe8}
+#app .chat-bubble {background:#f0f3f6;border:1px solid #e1e7ec;border-radius:10px;color:#2c3d4c}
+#app .chat-message.mine .chat-bubble {background:#e9f0f6;border-color:#d4e0ea}
+#app .chat-sale-card,#app #chat-sale-results>button {background:#f1f5f8;color:#425c70;border-color:#d5e0e9}
+#app #chat-compose {position:relative;background:#fff;border-top:1px solid var(--crm-border)}
+#app .chat-compose-actions {gap:12px;flex-wrap:wrap}
+.notification-head strong,.notification-item strong,.notification-all {font-size:.875rem}
+.notification-item small,.notification-empty,.notification-item b {font-size:.75rem}
+#toast {max-width:min(480px,calc(100vw - 32px));font-size:.875rem;line-height:1.5;padding:14px 18px;border-radius:9px;background:#26394a;color:#fff;box-shadow:0 8px 28px #172c4226;z-index:500;overflow-wrap:anywhere}
+.auth-card {border:1px solid var(--crm-border);border-radius:14px;box-shadow:0 16px 60px #22374d12}
+.auth-card label {font-size:.875rem;color:#52616f}
+.auth-card :is(input,button) {min-height:44px;font-size:1rem}
+#app .administrator-card {border:1px solid var(--crm-border);border-radius:10px;box-shadow:var(--crm-shadow)}
+#app .administrator-card h2 {font-size:1.25rem}
+#app .structure-panels {gap:16px}
+#app .structure-title {gap:12px;flex-wrap:wrap}
+#app .profile-photo-section {background:var(--crm-soft);border:1px solid var(--crm-border);border-radius:9px;padding:18px}
+body:has(#app) #navigation a.active,body:has(#app.used-consultation-refined) #navigation a.active {background:#30343a;color:#fff;box-shadow:inset 3px 0 var(--crm-brand)}
+#navigation a.active .nav-icon {color:var(--crm-brand)}
+.public-catalogue {background:var(--crm-canvas)}
+.public-catalogue main {padding-bottom:32px}
+.public-catalogue .catalogue-header {background:#202830;color:#fff;border-bottom:3px solid var(--crm-brand)}
+.public-catalogue .honda-card,.public-catalogue .reserva-catalog-card {border:1px solid var(--crm-border);border-radius:12px;box-shadow:var(--crm-shadow)}
+.public-catalogue .catalogue-filters,.public-catalogue .reserva-toolbar {padding:16px;background:#fff;border:1px solid var(--crm-border);border-radius:10px;gap:12px}
+@media(min-width:1700px) {#app .dashboard-lead-filters {grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) repeat(2,minmax(0,1.2fr)) repeat(6,minmax(0,1fr))}#app .capture-filters {grid-template-columns:repeat(7,minmax(0,1fr)) 38px}}
+@media(max-width:1200px) {
+  #app .dashboard-lead-filters,#app .dashboard-sales-filters {grid-template-columns:repeat(3,minmax(0,1fr))}
+  #app .used-checklist-items .used-checklist-row {grid-template-columns:repeat(2,minmax(0,1fr))}
+  #app .used-checklist-items .used-checklist-row label:nth-child(2) {grid-column:1;grid-row:2}
+  #app .used-checklist-items .used-checklist-row label:last-child {grid-column:2;grid-row:2}
+  #app .used-checklist-items .used-checklist-row label:nth-last-child(2) {grid-column:1/-1;grid-row:3}
+}
+@media(max-width:900px) {
+  #app .capture-filters,#app .catalogue-filters,#app .dashboard-filters {grid-template-columns:repeat(2,minmax(0,1fr))}
+  #app .used-steps {overflow-x:auto;grid-template-columns:repeat(5,minmax(112px,1fr));padding-bottom:6px;max-width:100%}
+  #app .used-steps button b {white-space:nowrap}
+  #app .capture-hero-side .capture-checklist .capture-checklist-item {grid-template-columns:minmax(0,1fr) auto}
+}
+@media(max-width:650px) {
+  #app .heading {align-items:start;flex-wrap:wrap;margin-bottom:16px}
+  #app .heading>.btn {width:auto}
+  #app .filters,#app .dashboard-filters,#app .capture-filters,#app .catalogue-filters,#app .reserva-toolbar {padding:12px;gap:10px}
+  #app :is(input,select,textarea):not([type=range]):not([type=checkbox]):not([type=radio]):not([type=file]),dialog :is(input,select,textarea):not([type=range]):not([type=checkbox]):not([type=radio]):not([type=file]) {font-size:1rem;min-height:44px}
+  #app .btn,dialog .btn,.public-catalogue .btn {min-height:44px}
+  #app .used-toolbar {flex-wrap:wrap;align-items:stretch}
+  #app .used-toolbar>label {flex:1 1 100%;width:100%}
+  #app .used-toolbar .btn {flex:1 1 auto}
+  #app .used-checklist-items .used-checklist-row {padding:12px;gap:12px}
+  #app .used-checklist-items .used-checklist-row :is(input,select) {font-size:1rem;height:44px}
+  #app .used-actions .btn {flex:1 1 140px}
+  #app .used-actions .used-feedback {flex-basis:100%}
+  #app .capture-hero-side .capture-checklist .capture-checklist-item {grid-template-columns:minmax(0,1fr) auto}
+  #app .capture-hero-side .capture-checklist-item>strong {grid-column:1/-1}
+  #app .capture-hero-side .capture-checklist-item>span:last-of-type {text-align:right}
+  .reserva-simulator .reserva-slider-intro {min-height:0}
+  .reserva-simulator .reserva-range-label,.reserva-simulator .hc-compare-slider-label {min-height:0}
+  dialog .dialog-head,dialog .dialog-body {padding:16px}
+  dialog .sale-form-section {padding:14px}
+  .hc-compare-columns,.reserva-compare {grid-template-columns:1fr}
+  .notification-wrap #notification-panel {position:fixed;right:12px;top:70px;width:calc(100vw - 24px)}
+}
+@media(max-width:420px) {
+  #app .dashboard-filters,#app .catalogue-filters,#app .reserva-toolbar {grid-template-columns:1fr}
+  #app .used-checklist-items .used-checklist-row {grid-template-columns:1fr}
+  #app .used-checklist-items .used-checklist-row label:nth-child(2) {grid-column:1;grid-row:2}
+  #app .used-checklist-items .used-checklist-row label:last-child {grid-column:1;grid-row:3}
+  #app .used-checklist-items .used-checklist-row label:nth-last-child(2) {grid-column:1;grid-row:4}
+  #app .capture-filters {grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce) {*,*::before,*::after {scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print {#app .panel {box-shadow:none}body {background:#fff}#app .used-actions,#toast {display:none!important}}
+/* Shared simulator rows align by their content, including wrapped labels. */
+@supports (grid-template-rows:subgrid) {
+  .reserva-simulator .reserva-compare {grid-template-rows:repeat(5,auto);row-gap:12px;align-items:stretch}
+  .reserva-simulator .reserva-compare>section {display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:12px}
+  .reserva-simulator .reserva-slider-intro {min-height:0;align-self:start}
+  .reserva-simulator .reserva-range-label,.reserva-simulator .hc-compare-slider-label {min-height:0;margin:0;align-self:end}
+  .reserva-simulator .comparison-results {min-width:0;align-self:start}
+  .reserva-simulator .reserva-compare input[type=range] {align-self:center;margin:0}
+  @media(max-width:650px) {.reserva-simulator .reserva-compare {grid-template-rows:none}.reserva-simulator .reserva-compare>section {grid-row:auto;grid-template-rows:none;display:block}}
+}
+#app .honda-card-body h2 {font-size:1.125rem;line-height:1.35;font-weight:650}
+#app .story-card-actions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto;padding-top:16px}
+#app .story-card-actions :is(.honda-compare-button,.story-card-button) {min-height:40px;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--crm-border);border-radius:7px;background:#fff;color:#445b6e;font-size:.8125rem;font-weight:600;padding:8px;line-height:1.4}
+#app .story-card-actions button:hover {background:#eef3f7;border-color:#acbdca}
+#app .honda-details {border-color:var(--crm-border);background:#f4f7fa;color:#405466;font-size:.875rem;border-radius:7px;min-height:38px}
+#app .hc-cash-form>small {flex-basis:100%;font-size:.75rem}
+#app .hc-cash-form>button {border:1px solid var(--crm-border);border-radius:7px;background:#f0f4f7;color:#42586a;padding:10px 14px;font-size:.875rem;font-weight:600}
+#app .hc-image-upload {position:relative;display:flex;align-items:center;justify-content:center;border:1px dashed #bfcbd5;border-radius:7px;padding:8px 12px;min-height:38px;color:#53697c;background:#fafcfd;font-size:.8125rem;overflow:hidden;cursor:pointer}
+#app .hc-image-upload>input[type=file] {position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+#app .hc-image-upload:focus-within {outline:2px solid var(--crm-focus);outline-offset:2px}
+#app .chat-bubble.sent {background:#e9f0f6;border-color:#d4e0ea}
+#app .chat-sale-card {background:#f1f5f8;color:#425c70;border-color:#d5e0e9}
+#app .panel.empty[role=status]::before {content:"";display:block;width:22px;height:22px;border:2px solid #dce4eb;border-top-color:#597084;border-radius:50%;margin:0 auto 12px;animation:crm-loading .8s linear infinite}
+@keyframes crm-loading {to {transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce) {#app .panel.empty[role=status]::before {animation:none}}
+@media(max-width:650px) {#app .story-card-actions :is(.honda-compare-button,.story-card-button),#app .hc-cash-form>button {min-height:44px}}
+#app .filters>label {flex:1 1 160px;display:grid;gap:6px;min-width:0}
+#app .filters>label.filter-search {flex:2 1 220px}
+#app .filters>label :is(input,select) {display:block;width:100%;margin:0}
+#app .reserva-card-actions {display:flex;align-items:stretch;flex-wrap:nowrap}
+#app .reserva-card-actions .story-card-actions {flex:1 1 0;min-width:0;margin:0;padding:0}
+#app .reserva-card-actions .reserva-link-button {flex:0 0 40px;width:40px;height:40px;min-height:40px;margin:0}
+#app .reserva-card-actions .story-card-actions :is(.btn,.story-card-button) {height:40px;min-height:40px;padding:8px;font-size:.8125rem}
+#app .reserva-bid-value {font-size:1rem;color:#40576a;gap:8px;flex-wrap:wrap;white-space:normal}
+#app .reserva-bid-value small {font-size:inherit;color:inherit}
+#app .used-closing-facts dt,#app .used-closing-line small,#app .used-closing-caption {font-size:.75rem;line-height:1.5}
+#app .used-closing-facts dd {font-size:.9375rem;line-height:1.5}
+#app .used-closing-highlight strong {font-size:1.6rem;font-variant-numeric:tabular-nums}
+#app .used-closing-highlight span {font-size:.875rem}
+#app .used-closing-highlight small {font-size:.75rem}
+.sale-print-page {border:1px solid var(--crm-border);border-radius:10px;box-shadow:var(--crm-shadow);color:var(--crm-ink)}
+.sale-print-page .sale-print-header {border-bottom:2px solid #303b47;padding-bottom:20px;align-items:center}
+.sale-print-page .sale-print-code {display:inline-block;background:#edf2f6;border:1px solid #d4dfe7;border-radius:6px;padding:5px 12px;font-size:1rem;font-weight:650;color:#405669}
+.sale-print-page .print-section {padding:18px 0;border-bottom:1px solid #e5ebf0}
+.sale-print-page .print-section h2 {font-size:1rem;color:#364d60;margin-bottom:14px}
+.sale-print-page dt {font-size:.75rem;line-height:1.5;color:var(--crm-muted)}
+.sale-print-page dd {font-size:.875rem;line-height:1.5;overflow-wrap:anywhere;margin-top:4px}
+.sale-print-page .print-total {background:#edf2f6;border:1px solid #d4dfe7;border-radius:8px;padding:18px;color:var(--crm-ink);gap:14px}
+.sale-print-page .print-total strong {font-size:1.5rem;font-variant-numeric:tabular-nums}
+.public-catalogue :is(.honda-card-body,.reserva-catalog-body) {padding:18px}
+.public-catalogue :is(.honda-card-body h2,.reserva-catalog-card h3) {font-size:1.125rem;line-height:1.4}
+.public-catalogue .story-card-actions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto;padding-top:14px}
+.public-catalogue :is(.honda-compare-button,.story-card-button,.honda-details) {min-height:44px;border:1px solid var(--crm-border);border-radius:7px;background:#f5f8fa;color:#41596b;font-size:.875rem;padding:8px;line-height:1.4}
+.public-catalogue :is(.honda-price strong,.reserva-installments strong) {color:var(--crm-ink);font-variant-numeric:tabular-nums}
+.public-catalogue .reserva-bid {background:#f0f4f7;border:1px solid #dce5ec;border-radius:8px}
+.public-catalogue .reserva-bid-value {color:#40576a}
+.public-catalogue :is(.catalogue-filters,.reserva-toolbar) :is(input,select) {font-size:.875rem;min-height:40px}
+@container(max-width:540px) {
+  #app .used-checklist-items .used-checklist-row {grid-template-columns:repeat(2,minmax(0,1fr))}
+  #app .used-checklist-items .used-checklist-name {grid-column:1/-1}
+  #app .used-checklist-items .used-checklist-row label:nth-child(2) {grid-column:1;grid-row:2}
+  #app .used-checklist-items .used-checklist-row label:last-child {grid-column:2;grid-row:2}
+  #app .used-checklist-items .used-checklist-row label:nth-last-child(2) {grid-column:1/-1;grid-row:3}
+}
+@container(max-width:340px) {
+  #app .used-checklist-items .used-checklist-row {grid-template-columns:1fr}
+  #app .used-checklist-items .used-checklist-row label:last-child {grid-column:1;grid-row:3}
+  #app .used-checklist-items .used-checklist-row label:nth-last-child(2) {grid-column:1;grid-row:4}
+}
+@media(max-width:650px) {
+  #app .reserva-card-actions .reserva-link-button {height:44px;min-height:44px;flex-basis:44px;width:44px}
+  #app .reserva-card-actions .story-card-actions :is(.btn,.story-card-button) {height:44px;min-height:44px}
+  .public-catalogue :is(.catalogue-filters,.reserva-toolbar) :is(input,select) {font-size:1rem;min-height:44px}
+}
+@media print {.sale-print-page {border:0;border-radius:0;box-shadow:none}.sale-print-page .print-section {break-inside:avoid}.sale-print-page .print-total {break-inside:avoid}.print-toolbar {display:none!important}}
+.public-catalogue .catalogue-header .brand {color:#fff}
+.shell>header {border-bottom:1px solid var(--crm-border);background:#fff;gap:16px}
+.shell>header #breadcrumb {font-size:.875rem;font-weight:600;color:#3c5061}
+.shell>header .account {gap:12px}
+.shell>header .demo {font-size:.75rem;color:#687989;background:#f4f7f9;border:1px solid #e2e9ef;border-radius:6px;padding:5px 8px}
+.shell>header .avatar {border:1px solid #dce4eb;box-shadow:none}
+#navigation a,#navigation summary {border-radius:7px;min-height:40px;font-size:.875rem}
+@media(max-width:900px) {#app.used-evaluation-stage .used-stage-nav {grid-template-columns:repeat(5,minmax(112px,1fr));overflow-x:auto}}
+@media(max-width:650px) {.shell>header {gap:10px}.shell>header .demo {display:none}.shell>header .account {gap:8px}}
+/* Compact dropdown typography across forms, filters and responsive screens.
+   Keep touch target heights while reducing selected values and option text. */
+:is(#app,dialog,.public-catalogue main,#auth-root) select,
+:is(#app,dialog,.public-catalogue main,#auth-root) select option,
+:is(#app,dialog,.public-catalogue main,#auth-root) select optgroup {
+  font-size:.75rem!important;font-weight:400!important;letter-spacing:normal!important;line-height:1.4
+}
+:is(#app,dialog,.public-catalogue main) select {
+  padding-inline:8px 24px!important;text-overflow:ellipsis;min-width:0;max-width:100%
+}
+:is(#app,dialog,.public-catalogue main) :is([role=option],.reserva-option-main,#chat-sale-results>button) {
+  font-size:.75rem!important;line-height:1.45;font-weight:400
+}
+@media(max-width:650px) {
+  :is(#app,dialog,.public-catalogue main,#auth-root) select,
+  :is(#app,dialog,.public-catalogue main,#auth-root) select option,
+  :is(#app,dialog,.public-catalogue main,#auth-root) select optgroup {font-size:.8125rem!important}
+}
+:is(#app,dialog,.public-catalogue main,#auth-root) :is(select,option,optgroup,[role=option],.reserva-option-main,#chat-sale-results>button) {text-transform:uppercase!important}
+/* Contrast contracts: dark KPIs must never inherit light-surface text colors. */
+#app :is(.metrics,.secondary-metrics,.analytical-metrics,.seller-metrics)>.metric:first-child {
+  background:#1a1a1a;border-color:#1a1a1a;box-shadow:0 3px 10px #1c2d401a;color:#fff
+}
+#app :is(.metrics,.secondary-metrics,.analytical-metrics,.seller-metrics)>.metric:first-child strong {color:#fff}
+#app :is(.metrics,.secondary-metrics,.analytical-metrics,.seller-metrics)>.metric:first-child label {color:#e2e8ee}
+#app :is(.metrics,.secondary-metrics,.analytical-metrics,.seller-metrics)>.metric:first-child :is(small,.metric-more) {color:#cbd5df}
+#app :is(.metrics,.secondary-metrics,.analytical-metrics,.seller-metrics)>.metric:first-child:hover {border-color:#1a1a1a}
+#app :is(.panel,.used-panel,.profile-panel,.analytical-panel,.agenda-card,.administrator-card,.honda-card,.reserva-catalog-card,.used-reference-identity,.used-reference-stat),
+.public-catalogue :is(.panel,.honda-card,.reserva-catalog-card) {border-color:var(--crm-border);box-shadow:var(--crm-shadow)}
+#app .capture-page .capture-dialog-body,#app.capture-page .capture-dialog-body {background:var(--crm-canvas)}
+#app :is(.capture-hero>section,.capture-hero-side>section,.capture-financial-card,.capture-personal-card,.capture-beside-consultations) {background:#fff;border-color:var(--crm-border);box-shadow:var(--crm-shadow)}
+#app :is(.used-client-layout,.used-vehicle-layout,.used-closing-grid) {gap:18px}
+@media print {body,#app.capture-page .capture-dialog-body {background:#fff}#app .panel {box-shadow:none}}
+
+/* Brand palette from the user-approved Nexus reference. */
+:root {--brand-yellow:#fad23b;--brand-black:#0e0e0e;--brand-on-yellow:#1e242a;--brand-yellow-soft:#fff8d6;--crm-brand:var(--brand-yellow)}
+/* Shared selection buttons: views, contact situations and evaluation stages. */
+#app :is(.view-switch,.situation-tabs) {background:transparent;border:0;padding:0;gap:6px;box-shadow:none}
+#app :is(.view-switch,.situation-tabs) button {
+  background:#fad23b;color:#000;border:1px solid #fad23b;font-weight:600;box-shadow:none;opacity:1
+}
+#app :is(.view-switch,.situation-tabs) button.selected,
+#app :is(.view-switch,.situation-tabs) button.selected:hover {
+  background:#000;color:#fff;border-color:#000;box-shadow:none
+}
+#app :is(.view-switch,.situation-tabs) button:not(.selected):hover {background:#fad23b;color:#000;border-color:#000}
+#app :is(.view-switch,.situation-tabs) button :is(svg,span) {color:inherit}
+
+#app .used-steps button,
+#app .used-steps button.used-step-done:not(.active) {
+  background:#fad23b;color:#000;border-color:#fad23b;box-shadow:none
+}
+#app .used-steps button.active,#app .used-steps button.active:hover {
+  background:#000;color:#fff;border-color:#000;box-shadow:none
+}
+#app .used-steps button:not(.active):hover {background:#fad23b;color:#000;border-color:#000}
+#app .used-steps button :is(b,span,svg) {color:inherit}
+#app :is(.view-switch,.situation-tabs,.used-steps) button:focus-visible {
+  outline:2px solid #000;outline-offset:3px
+}
+
+#app .used-stage-nav button {background:#fad23b;color:#000;border-color:#fad23b;box-shadow:none}
+#app .used-stage-nav button[aria-current=step],#app .used-stage-nav button[aria-current=step]:hover {background:#000;color:#fff;border-color:#000}
+#app .used-stage-nav button:not([aria-current=step]):hover {background:#fad23b;color:#000;border-color:#000}
+#app .used-stage-nav button span {background:transparent;color:inherit;border-color:currentColor}
+#app .used-stage-nav button:focus-visible {outline:2px solid #000;outline-offset:3px}
+
+/* Dark catalogue summary panels share the same data color as dashboards. */
+:is(dialog,.public-catalogue) .hc-summary {background:#1a1a1a;border-color:#1a1a1a;color:#fff}
+:is(dialog,.public-catalogue) .hc-summary :is(strong,span) {color:#fff}
+
+/* User-approved catalogue and navigation references, September 2026. */
+body #main-sidebar {background:#000;border-right:1px solid #202020}
+body #main-sidebar :is(.workspace>div,.workspace small,.navlabel,.nav-group>summary,#navigation a,.aside-bottom,.aside-bottom small,.brand small) {color:#fff}
+body #main-sidebar #navigation a .nav-icon,body #main-sidebar .nav-group>summary .nav-icon {color:#fff;opacity:1}
+body #main-sidebar #navigation a.active,
+body:has(#app) #main-sidebar #navigation a.active,
+body:has(#app.used-consultation-refined) #main-sidebar #navigation a.active {
+  background:#fad23b;color:#1a1a1a;border-color:#fad23b;box-shadow:none;font-weight:650
+}
+body #main-sidebar #navigation a.active .nav-icon {color:#1a1a1a;opacity:1}
+body #main-sidebar #collapse-sidebar {background:#111;color:#fff;border-color:#343434;border-radius:9px}
+body #main-sidebar #collapse-sidebar svg {color:#fad23b}
+body #main-sidebar .workspace {background:transparent;border-color:#262626;border-radius:10px}
+body #main-sidebar .nav-group>div {border-left-color:#444}
+:is(#app,.public-catalogue) :is(.honda-card,.reserva-catalog-card) {
+  background:#fff;border:1px solid #cbd4dd;border-radius:16px;box-shadow:0 3px 12px #1a1a1a08;overflow:hidden
+}
+:is(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo) {
+  height:230px;min-height:230px;padding:38px 18px 8px;border-bottom:1px solid #e8edf1;background:#fff;position:relative
+}
+:is(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo) img {width:100%;height:100%;object-fit:contain;mix-blend-mode:normal;padding:0}
+:is(#app,.public-catalogue) :is(.honda-tag,.reserva-image-tag) {
+  position:absolute;top:14px;left:16px;max-width:calc(100% - 32px);background:#fad23b;color:#1a1a1a;
+  border:1px solid #fad23b;border-radius:7px;padding:7px 10px;font-size:.75rem;font-weight:650;line-height:1.4
+}
+:is(#app,.public-catalogue) :is(.honda-card-body,.reserva-catalog-body) {padding:20px;display:flex;flex-direction:column;flex:1;min-width:0}
+:is(#app,.public-catalogue) :is(.honda-family,.reserva-plan-name) {font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#637180;margin:0 0 8px}
+:is(#app,.public-catalogue) :is(.honda-card,.reserva-catalog-card) h2 {font-size:1.25rem;font-weight:700;line-height:1.35;margin:0 0 20px;color:#26313c}
+:is(#app,.public-catalogue) .honda-credit {padding:12px 0 16px;border-bottom:1px solid #e8edf1;color:#637180;font-size:.875rem}
+:is(#app,.public-catalogue) .honda-credit strong {color:#637180;font-weight:500}
+:is(#app,.public-catalogue) .honda-price {padding-top:16px}
+:is(#app,.public-catalogue) .honda-price-line {flex-wrap:wrap;gap:8px;align-items:baseline;padding:12px 0}
+:is(#app,.public-catalogue) .honda-price-line strong {font-size:1.55rem;color:#26313c}
+:is(#app,.public-catalogue) .story-card-actions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:16px;margin-top:auto}
+:is(#app,.public-catalogue) .story-card-actions :is(.btn,.honda-compare-button,.story-card-button),
+:is(#app,.public-catalogue) .story-card-actions :is(.btn,.honda-compare-button,.story-card-button):hover {
+  background:#1a1a1a;color:#fff;border:1px solid #1a1a1a;border-radius:8px;min-height:48px;height:auto;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:9px 8px;font-size:.8125rem;font-weight:600;line-height:1.4
+}
+:is(#app,.public-catalogue) .honda-details,
+:is(#app,.public-catalogue) .honda-details:hover {
+  background:#fad23b;color:#1a1a1a;border:1px solid #fad23b;border-radius:8px;
+  min-height:52px;margin-top:14px;padding:10px 12px;width:100%;display:flex;align-items:center;justify-content:space-between;font-weight:650
+}
+:is(#app,.public-catalogue) .honda-details span {background:#1a1a1a;color:#fff;width:32px;height:32px;border-radius:7px}
+:is(#app,.public-catalogue) .reserva-card-actions {margin-top:auto}
+:is(#app,.public-catalogue) .reserva-card-actions .story-card-actions {padding:0;margin:0}
+@media(max-width:650px) {
+ :is(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo) {height:220px;min-height:220px}
+ :is(#app,.public-catalogue) :is(.honda-card-body,.reserva-catalog-body) {padding:18px}
+}
+
+#app .reserva-card-actions .story-card-actions :is(.btn,.story-card-button),
+.public-catalogue .reserva-card-actions .story-card-actions :is(.btn,.story-card-button) {background:#1a1a1a;color:#fff;border-color:#1a1a1a;min-height:48px;height:auto;border-radius:8px}
+/* Executive dashboard reference: compact KPIs and a six-panel analytic grid. */
+#app .exec-kpis {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:18px}
+#app .exec-kpi {position:relative;padding:16px;background:#fff;border:1px solid #dce2e7;border-radius:9px;min-width:0;box-shadow:0 1px 4px #1a1a1a05}
+#app .exec-kpi>span:first-of-type {font-size:.75rem;color:#52616f}
+#app .exec-kpi>strong {display:block;font-size:clamp(1rem,1.6vw,1.45rem);line-height:1.3;margin:8px 0;font-weight:700;overflow-wrap:anywhere;padding-right:22px}
+#app .exec-kpi small {display:block;font-size:.65rem;color:#78828b;margin-top:4px}
+#app .exec-kpi .up {color:#27813c;font-weight:600}#app .exec-kpi .down {color:#b42332;font-weight:600}
+#app .exec-kpi .exec-kpi-icon {position:absolute;right:12px;top:16px;display:grid;place-items:center;width:30px;height:30px;background:#fff8d6;color:#a17c00;border-radius:50%;font-size:17px}
+#app .exec-grid {display:grid;grid-template-columns:1.5fr 1fr 1.1fr;gap:16px}
+#app .exec-panel {background:#fff;border:1px solid #dce2e7;border-radius:9px;padding:18px;min-width:0;box-shadow:0 1px 4px #1a1a1a05}
+#app .exec-panel header {display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+#app .exec-panel h2 {font-size:.85rem;margin:0;font-weight:650}
+#app .exec-panel header>span {font-size:.65rem;color:#7a858f;border:1px solid #edf0f3;border-radius:5px;padding:5px 7px}
+#app .exec-line {display:block;width:100%;height:auto;min-height:190px}#app .exec-line text {font-size:10px;fill:#7a858f}
+#app .exec-footnote {font-size:.65rem;line-height:1.5;color:#7a858f;margin:8px 0 0}
+#app .exec-funnel {display:grid;gap:3px;padding:4px 0}
+#app .exec-funnel>div {display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:8px;min-height:32px;font-size:.65rem}
+#app .exec-funnel i {justify-self:center;width:var(--w);height:32px;background:var(--fill);clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}
+#app .exec-funnel small {font-weight:400;color:#78828b}
+#app .exec-origins {display:flex;align-items:center;gap:16px;min-height:190px;flex-wrap:wrap}
+#app .exec-donut {width:140px;height:140px;flex-shrink:0;border-radius:50%;display:grid;place-items:center}
+#app .exec-donut>div {width:94px;height:94px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#app .exec-donut strong {font-size:1.5rem}#app .exec-donut small {font-size:.65rem;color:#78828b}
+#app .exec-origins ul {list-style:none;padding:0;margin:0;flex:1;min-width:100px}
+#app .exec-origins li {display:flex;gap:6px;align-items:center;font-size:.65rem;margin:10px 0}
+#app .exec-origins li i {width:7px;height:7px;border-radius:2px;flex-shrink:0}#app .exec-origins li span {flex:1}#app .exec-origins b {font-weight:600}
+#app .exec-table-wrap {overflow-x:auto}#app .exec-ranking table {width:100%;border-collapse:collapse}#app .exec-ranking :is(th,td) {padding:10px 5px;font-size:.7rem;white-space:nowrap}#app .exec-ranking th {background:#fff;font-size:.65rem;letter-spacing:0;text-transform:none}#app .exec-ranking td {color:#465461}
+#app .exec-stores>div {display:grid;grid-template-columns:1fr auto 28px;gap:6px 8px;font-size:.7rem;margin:16px 0}#app .exec-stores strong {font-size:.7rem}#app .exec-stores small {text-align:right;font-size:.65rem}#app .exec-stores i {grid-column:1/-1;height:5px;background:#eff1f3;border-radius:5px;overflow:hidden}#app .exec-stores b {display:block;height:100%;background:#fad23b;border-radius:5px}
+#app .exec-goal {position:relative;max-width:260px;margin:auto;text-align:center;height:164px}#app .exec-goal svg {width:100%;height:150px}#app .exec-goal>strong {position:absolute;top:78px;left:0;right:0;font-size:1.9rem}#app .exec-goal>span {position:absolute;top:118px;left:0;right:0;font-size:.75rem;color:#78828b}
+#app .exec-goal-facts {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center;margin-top:12px}#app .exec-goal-facts>div+div {border-left:1px solid #edf0f3}#app .exec-goal-facts small {display:block;font-size:.65rem;color:#78828b}#app .exec-goal-facts strong {display:block;font-size:.75rem;margin-top:5px;overflow-wrap:anywhere}
+#app .exec-empty {font-size:.8rem;color:#78828b;padding:25px 0}
+#app .goals-editor {padding:20px;margin-bottom:18px}#app .goals-editor h2 {margin-top:0}#app #goal-form {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:end}#app #goal-form label {display:grid;gap:6px}#app #goal-feedback {grid-column:1/-1;font-size:.8rem;margin:0}#app .compact-records progress {display:block;max-width:110px;height:6px;margin-top:7px;accent-color:#fad23b}
+@media(max-width:1200px) {#app .exec-grid {grid-template-columns:repeat(2,minmax(0,1fr))}#app .exec-kpis {grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px) {#app .exec-grid {grid-template-columns:1fr}#app .exec-kpis {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#app .exec-kpi {padding:13px}#app .exec-kpi>strong {font-size:1.1rem}#app #goal-form {grid-template-columns:1fr}#app .exec-panel {padding:16px}}
+
+#app .exec-goal-segment {display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:9px 0;border-top:1px solid #edf0f3;font-size:.7rem}
+#app .exec-goal-segment strong {font-size:.7rem;text-align:right}#app .exec-goal-segment small {color:#637180;font-weight:600}
+#app #goal-form label[hidden] {display:none}
+
+/* Identificação do usuário junto à foto, fora da navegação lateral. */
+.shell>header .header-identity{display:flex;margin:0;padding:0;min-height:0;border:0;border-radius:0;background:transparent;text-align:right;max-width:200px;min-width:0}
+.shell>header .header-identity>div{color:#1a1a1a;font-size:12px;font-weight:600;line-height:1.35;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;overflow-wrap:normal}
+.shell>header .header-identity small{color:#6b7280;font-size:10px;font-weight:400;margin-top:3px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+@media(max-width:650px){.shell>header .header-identity{max-width:120px;flex-shrink:1}.shell>header .header-identity>div{font-size:11px}.shell>header .header-identity small{font-size:9px}.shell>header>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.shell>header .account{flex-shrink:0}}
+@media(max-width:380px){.shell>header .header-identity{max-width:90px}}
+
+.dashboard-mobile-filter-button{display:none}
+@media(max-width:700px){
+#app .dashboard-mobile-filter-button{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:46px;border:1px solid #d9dfe5;border-radius:11px;background:#fff;padding:12px 15px;color:#1a1a1a;font-family:inherit;font-size:13px;font-weight:600;text-align:left;margin:0 0 16px;cursor:pointer}
+#app .dashboard-mobile-filter-button>span:last-child{font-size:20px;font-weight:400}
+#app .dashboard-filters{display:none!important}#app .dashboard-filters.mobile-expanded{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:-6px;padding:14px;gap:12px}#app .dashboard-filters.mobile-expanded label:first-child{grid-column:1/-1}
+#app .metrics .metric{min-width:0;padding:14px}#app .metrics .metric strong{font-size:clamp(15px,4.1vw,21px);letter-spacing:-.035em;white-space:nowrap}#app .metrics .metric>label,#app .metrics .metric h3{font-size:12px;line-height:1.4;padding-right:24px;overflow-wrap:anywhere}
+}
+@media(max-width:360px){#app .dashboard-filters.mobile-expanded{grid-template-columns:1fr}}
+
+/* Consistent segmented navigation across dashboards and lead views. */
+#app :is(.view-switch,.situation-tabs){display:inline-flex;align-items:center;flex-wrap:nowrap;max-width:100%;box-sizing:border-box;padding:4px;gap:4px;background:#fff;border:1px solid #dce2e7;border-radius:11px;box-shadow:0 1px 2px #1a1a1a04;vertical-align:middle}
+#app :is(.view-switch,.situation-tabs) button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;height:36px;min-height:36px;box-sizing:border-box;padding:8px 15px;border-radius:7px;font-family:inherit;font-size:12px;font-weight:600;line-height:1.2;letter-spacing:0;white-space:nowrap;margin:0;background:#fad23b;color:#000;border:1px solid #fad23b;box-shadow:none}
+#app :is(.view-switch,.situation-tabs) button.selected,#app :is(.view-switch,.situation-tabs) button.selected:hover{background:#000;color:#fff;border-color:#000}
+#app .dashboard-tabs{margin:0 0 20px}
+#app :is(.view-switch,.situation-tabs) button:not(.selected):hover{background:#fad23b;color:#000;border-color:#e4bb25}
+@media(max-width:700px){#app :is(.view-switch,.situation-tabs){display:flex;width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;padding:4px;gap:4px}#app :is(.view-switch,.situation-tabs) button{font-size:11px;height:36px;min-height:36px;padding:8px 12px}#app .dashboard-tabs{margin-bottom:16px}}
+
+#app .profile-photo-content{min-width:0;flex:1}
+#app .profile-photo-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+#app .profile-photo-actions>label,#app .profile-photo-actions>button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:38px;padding:9px 14px;margin:0;line-height:1.3;font-size:12px;font-weight:500;cursor:pointer;border-radius:7px}
+#app .profile-photo-actions>#remove-profile-photo{background:transparent;border:1px solid #d7dde3;color:#596573;text-decoration:none}
+#app .profile-photo-actions>#remove-profile-photo:hover{background:#fff;color:#a53838;border-color:#dcbdbe}
+@media(max-width:650px){#app .profile-photo-actions{gap:8px}#app .profile-photo-actions>label,#app .profile-photo-actions>button{min-height:42px;padding:10px 12px}}
+
+#app .dashboard-mobile-filter-button{display:flex;width:100%;align-items:center;justify-content:space-between;background:#fff;border:1px solid #dce0e5;border-radius:10px;padding:12px 16px;margin:0 0 14px;color:#1a1a1a;font-size:12px;text-align:left;cursor:pointer}
+#app .dashboard-filters{display:none!important}#app .dashboard-filters.mobile-expanded{display:grid!important;grid-template-columns:minmax(225px,1.7fr) repeat(7,minmax(100px,1fr));gap:10px;padding:14px;background:#fff;border:1px solid #dce0e5;border-radius:10px;margin:0 0 18px}
+#app .dashboard-filters label{min-width:0;font-size:11px}#app .dashboard-filters select{width:100%;min-width:0;font-size:11px;height:36px;padding:6px 9px}
+.dashboard-range-button{height:36px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:7px;border:1px solid #dce0e5;border-radius:7px;background:#fff;font-size:11px;padding:6px 10px;cursor:pointer;color:#1a1a1a}
+.dashboard-range-dialog{width:320px;max-width:calc(100vw - 40px);padding:18px;border:1px solid #dce0e5;border-radius:14px;color:#1a1a1a;box-shadow:0 12px 50px #0002}.dashboard-range-dialog::backdrop{background:#0004}.range-head,.range-month,.range-values{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:16px}.range-head strong{font-size:14px}.range-head button,.range-month button{border:0;background:#f4f5f6;border-radius:6px;width:30px;height:30px;cursor:pointer}.range-values input{min-width:0;width:130px;padding:8px;border:1px solid #ddd;border-radius:7px;font-size:12px}.range-month strong{font-size:12px;text-transform:capitalize}.range-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}.range-calendar small{padding:6px;color:#777}.range-calendar button{height:34px;border:0;border-radius:6px;background:#fff;font-size:12px;cursor:pointer}.range-calendar button:hover{background:#eee}.range-calendar .range-edge{background:#fad23b;font-weight:600}.range-calendar .range-between{background:#fff3b8}.dashboard-range-dialog p{font-size:11px;color:#777;margin:12px 0 0}
+@media(max-width:1500px){#app .dashboard-filters.mobile-expanded{grid-template-columns:minmax(225px,1.6fr) repeat(4,minmax(110px,1fr))}}@media(max-width:950px){#app .dashboard-filters.mobile-expanded{grid-template-columns:repeat(3,minmax(0,1fr))}#app .dashboard-filters .dashboard-range-field{grid-column:span 2}}@media(max-width:700px){#app .dashboard-filters.mobile-expanded{grid-template-columns:repeat(2,minmax(0,1fr))}#app .dashboard-filters .dashboard-range-field{grid-column:1/-1}#app .dashboard-filters select{height:40px;font-size:12px}}
+
+/* Compact catalogue cards: identical density in internal and shared catalogues. */
+:is(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo){height:175px;min-height:175px;box-sizing:border-box;padding:30px 14px 6px}
+:is(#app,.public-catalogue) :is(.honda-card-body,.reserva-catalog-body){padding:14px}
+:is(#app,.public-catalogue) :is(.honda-card,.reserva-catalog-card){border-radius:12px}
+:is(#app,.public-catalogue) :is(.honda-card,.reserva-catalog-card) h2{font-size:1rem;line-height:1.35;min-height:0;margin:0 0 10px;overflow-wrap:anywhere}
+:is(#app,.public-catalogue) :is(.honda-family,.reserva-plan-name){margin-bottom:6px;letter-spacing:.04em}
+:is(#app,.public-catalogue) :is(.honda-tag,.reserva-image-tag){top:10px;left:12px;padding:4px 7px;font-size:12px}
+:is(#app,.public-catalogue) .honda-credit{padding:7px 0;margin:6px 0;font-size:12px}
+:is(#app,.public-catalogue) .honda-price{margin-top:7px;padding-top:7px}
+:is(#app,.public-catalogue) .honda-price-line{padding:7px 0;gap:4px}
+:is(#app,.public-catalogue) .honda-price-line strong{font-size:1.2rem}
+:is(#app,.public-catalogue) .story-card-actions{gap:6px;padding-top:10px}
+:is(#app,.public-catalogue) .story-card-actions :is(.btn,.honda-compare-button,.story-card-button),:is(#app,.public-catalogue) .story-card-actions :is(.btn,.honda-compare-button,.story-card-button):hover{min-height:40px;padding:7px 6px;font-size:12px;box-shadow:none;margin-top:0}
+:is(#app,.public-catalogue) .honda-details,:is(#app,.public-catalogue) .honda-details:hover{min-height:40px;margin-top:8px;padding:7px 10px;font-size:13px}
+:is(#app,.public-catalogue) .honda-details span{width:26px;height:26px}
+:is(#app,.public-catalogue) .reserva-key-line{padding:8px 0;gap:5px}
+:is(#app,.public-catalogue) .reserva-key-line strong{font-size:20px}
+:is(#app,.public-catalogue) .reserva-catalog-card .reserva-facts{margin:8px 0 10px!important}
+:is(#app,.public-catalogue) .reserva-catalog-card .reserva-facts>div{padding:5px 0;gap:6px}
+:is(#app,.public-catalogue) .reserva-catalog-card .reserva-card-actions{padding-top:9px}
+:is(#app,.public-catalogue) :is(.catalogue-grid,.reserva-grid){gap:16px}
+@media(max-width:650px){:is(#app,.public-catalogue) :is(.honda-photo,.reserva-catalog-photo){height:180px;min-height:180px}:is(#app,.public-catalogue) :is(.honda-card-body,.reserva-catalog-body){padding:14px}}
+
+/* Clear, generous expand affordance without increasing filter-bar height. */
+#app .dashboard-mobile-filter-button{min-height:48px;padding:8px 12px 8px 16px;gap:12px}
+#app .dashboard-mobile-filter-button [data-dashboard-filter-arrow]{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:8px;background:#fad23b;color:#1a1a1a;font-size:24px;font-weight:500;line-height:1;transition:background .15s,color .15s}
+#app .dashboard-mobile-filter-button[aria-expanded=true] [data-dashboard-filter-arrow]{background:#1a1a1a;color:#fff}
+#app .dashboard-mobile-filter-button:hover{border-color:#a7b0ba}#app .dashboard-mobile-filter-button:focus-visible{outline:2px solid #1a1a1a;outline-offset:3px}
+@media(max-width:700px){#app .dashboard-mobile-filter-button{min-height:50px}#app .dashboard-mobile-filter-button [data-dashboard-filter-arrow]{flex-basis:36px;width:36px;height:36px}}
+
+#app .internal-filter-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:48px;padding:8px 12px 8px 16px;gap:12px;margin:0 0 14px;border:1px solid #dce0e5;border-radius:10px;background:#fff;color:#1a1a1a;font:500 12px inherit;cursor:pointer;text-align:left}
+#app .internal-filter-indicator{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;background:#fad23b;color:#1a1a1a;border-radius:8px;font-size:24px;line-height:1}
+#app .internal-filter-toggle[aria-expanded=true] .internal-filter-indicator{background:#1a1a1a;color:#fff}#app .internal-filter-toggle:focus-visible{outline:2px solid #1a1a1a;outline-offset:3px}
+#app .internal-filter-fields[hidden]{display:none!important}#app .internal-filter-fields:not([hidden]){display:grid!important;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;align-items:end;padding:14px;margin:0 0 18px;background:#fff;border:1px solid #dce0e5;border-radius:10px}
+#app .internal-filter-fields label{min-width:0;font-size:11px}#app .internal-filter-fields :is(input,select){min-width:0;width:100%;box-sizing:border-box;font-size:12px;height:38px;min-height:38px;padding:7px 9px;margin-top:5px;border:1px solid #dce0e5;border-radius:7px;background:#fff;color:#1a1a1a}#app .internal-filter-fields .filter-search{grid-column:span 2}
+#app .uc-mobile-filter-toggle{display:none!important}@media(max-width:700px){#app .internal-filter-fields:not([hidden]){grid-template-columns:repeat(2,minmax(0,1fr))}#app .internal-filter-fields .filter-search{grid-column:1/-1}#app .internal-filter-fields :is(input,select){min-height:42px;height:42px}}
+:is(#app,.public-catalogue) .honda-card .honda-details{margin-top:10px}
+:is(#app,.public-catalogue) .honda-card .story-card-actions{margin-top:0;padding-top:8px}
+:is(#app,.public-catalogue) .honda-card .story-card-actions :is(.honda-compare-button,.story-card-button),:is(#app,.public-catalogue) .honda-card .story-card-actions :is(.honda-compare-button,.story-card-button):hover{background:#fff;color:#637180;border:1px solid #dce0e5;box-shadow:none;min-height:36px;padding:6px;font-weight:500;font-size:12px}
+:is(#app,.public-catalogue) .honda-card .story-card-actions :is(.honda-compare-button,.story-card-button):hover{background:#f4f5f6;color:#1a1a1a}
+.exec-seller-identity{display:flex;align-items:center;gap:10px;min-width:0}.exec-seller-identity strong{font-size:13px;font-weight:500;overflow-wrap:anywhere}.exec-seller-avatar{width:34px;height:34px;border-radius:50%;background:#eef0f3;color:#637180;display:grid;place-items:center;flex:0 0 34px;overflow:hidden;font-size:11px}.exec-seller-avatar img{width:100%;height:100%;object-fit:cover}
+
+/* Corporate record lists: compact white rows on a quiet grey working surface. */
+#app :is(.table-wrap,.reserva-list-wrap,.exec-table-wrap){background:#f3f5f7;border-radius:12px;padding:4px 8px 8px;box-sizing:border-box}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table){width:100%;border-collapse:separate;border-spacing:0 7px;background:transparent;font-size:13px}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) th{background:transparent;border:0;padding:9px 12px;color:#647180;font-size:12px;font-weight:500;letter-spacing:.02em;line-height:1.4;text-align:left}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) tbody td{background:#fff;border-top:1px solid #e4e8ed;border-bottom:1px solid #e4e8ed;border-left:0;border-right:0;padding:12px;vertical-align:middle;line-height:1.45;color:#33404d;font-size:13px;transition:background .15s}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) tbody td:first-child{border-left:1px solid #e4e8ed;border-radius:9px 0 0 9px}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) tbody td:last-child{border-right:1px solid #e4e8ed;border-radius:0 9px 9px 0}
+#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) tbody tr:is(:hover,:focus-within) td{background:#fafbfc;border-top-color:#cbd3dd;border-bottom-color:#cbd3dd}
+#app .record-cell{gap:5px;min-width:0}#app .record-line{line-height:1.45;gap:8px;min-width:0}#app .record-primary{font-size:13px;font-weight:600;color:#1a1a1a}#app .record-secondary{font-size:12px;font-weight:400;color:#647180}#app .record-label{color:#647180;font-size:12px;font-weight:400}#app .record-line>div{min-width:0;overflow-wrap:anywhere}
+#app .record-money{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-variant-numeric:tabular-nums}#app .record-money>div{text-align:right;white-space:nowrap;margin-left:auto;color:#26323e}
+#app :is(.record-actions-column,.record-actions){text-align:center;justify-content:center}#app .record-actions{align-items:center;min-width:34px}#app :is(.lead-icon-action,.capture-action-trigger,.stock-menu-trigger){border:1px solid #dde3e9;background:#fff;color:#52616f;border-radius:8px;min-width:34px;min-height:34px}
+#app .badge{border-radius:6px;padding:5px 8px;line-height:1.25;font-size:12px;font-weight:500;box-shadow:none}#app .badge.green{background:#edf7f0;color:#276645;border:1px solid #d4e9dc}#app .badge.red{background:#fceded;color:#a43c3c;border:1px solid #f2d8d8}#app .badge.blue{background:#edf3fa;color:#42658a;border:1px solid #dbe5f1}#app .badge.yellow{background:#fff8df;color:#806719;border:1px solid #f1e5b8}
+#app :is(.used-stock-list,.used-captures-list){background:#f3f5f7;border:0;border-radius:12px;padding:4px 8px 8px;box-sizing:border-box}
+#app :is(.used-stock-head,.used-captures-head){background:transparent;border:0;color:#647180;font-size:12px;font-weight:500;padding:10px 12px}
+#app :is(.used-stock-row,.used-capture-row){background:#fff;border:1px solid #e4e8ed;border-radius:9px;margin:0 0 7px;padding:12px;min-height:0;font-size:13px;align-items:center;line-height:1.45}
+#app :is(.used-stock-row,.used-capture-row):is(:hover,:focus-within){background:#fafbfc;border-color:#cbd3dd}
+#app .capture-primary{gap:4px}#app .capture-primary strong{font-size:13px;font-weight:600;color:#1a1a1a}#app :is(.capture-identification,.capture-values){gap:5px;font-size:12px}#app :is(.capture-identification,.capture-values) b{font-size:11px;color:#647180;font-weight:500}#app .capture-values span{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-variant-numeric:tabular-nums}#app .capture-primary small{font-size:12px;color:#647180}
+#app .reserva-management-table td:nth-child(3){text-align:right;font-variant-numeric:tabular-nums}#app .reserva-management-table th:nth-child(3){text-align:right}#app .reserva-management-table :is(small,td>span){font-size:12px;color:#647180;line-height:1.45}#app .reserva-management-table td>strong{font-size:13px;font-weight:600}#app .reserva-list-model{gap:10px}#app .reserva-list-model img{width:52px;height:44px;object-fit:contain}#app .reserva-management-table .reserva-list-actions{text-align:center}
+#app .exec-ranking th:last-child,#app .exec-ranking td:last-child{text-align:right;font-variant-numeric:tabular-nums}#app .exec-ranking th{white-space:normal}#app .exec-ranking td{font-size:13px}
+@media(max-width:700px){#app :is(.table-wrap,.reserva-list-wrap,.exec-table-wrap,.used-stock-list,.used-captures-list){padding:3px 4px 6px}#app :is(.compact-records,.compact-leads,.reserva-management-table,.uc-proposals-table,.exec-ranking table) tbody td{padding:10px;font-size:13px}#app :is(.used-stock-row,.used-capture-row){padding:10px}#app :is(.lead-icon-action,.capture-action-trigger,.stock-menu-trigger){min-width:40px;min-height:40px}}
+
+/* Account sign-out stays beside the profile avatar at every screen width. */
+.shell>header .account .header-logout{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:8px 12px;background:#dc2626;color:#fff;border:1px solid #dc2626;border-radius:9px;font-size:12px;font-weight:600;line-height:1;cursor:pointer;flex-shrink:0}
+.shell>header .account .header-logout:hover{background:#b91c1c;border-color:#b91c1c}
+.shell>header .account .header-logout svg{width:17px;height:17px;flex-shrink:0}
+@media(max-width:650px){.shell>header .account .header-logout{min-height:34px;padding:8px;gap:5px;font-size:11px}}
+
+#app .exec-evolution{grid-column:1 / -1}#app .exec-evolution-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}#app .exec-evolution-series{min-width:0}#app .exec-evolution-series h3{font-size:14px;color:#63707e;margin:12px 0 8px;font-weight:500}#app .exec-evolution-series>strong{font-size:22px;font-variant-numeric:tabular-nums}#app .exec-evolution .exec-line text{font-size:12px} @media(max-width:650px){#app .exec-evolution-charts{grid-template-columns:1fr;gap:12px}}
+
+#app .exec-panel header{position:relative;padding-right:38px;min-height:32px}#app .chart-download{position:absolute;right:0;top:0;display:grid;place-items:center;width:32px;height:32px;padding:6px;background:transparent;border:1px solid transparent;border-radius:7px;color:#697582;cursor:pointer}#app .chart-download svg{width:18px;height:18px}#app .chart-download:hover{background:#fff8d6;border-color:#fad23b;color:#1a1a1a}#app .chart-download:focus-visible{outline:2px solid #fad23b;outline-offset:2px}#app .chart-download:disabled{opacity:.4;cursor:wait}#app .exec-funnel-shape{height:32px;justify-self:center}#app .exec-donut{position:relative}#app .exec-donut-svg{position:absolute;inset:0;width:140px;height:140px}#app .exec-donut>div{position:relative;background:transparent}
+
+#app .analytical-chart-head{position:relative;padding-right:38px;display:flex;align-items:center;min-height:32px;margin-bottom:16px;background:transparent;height:auto}#app .analytical-chart-head h2{margin:0}
+
+/* Scenic catalogue pictures fill the card header in private and shared views. */
+:is(#app,.public-catalogue) .honda-photo:has(>img.hc-scenic-photo){padding:0;overflow:hidden;display:block}
+:is(#app,.public-catalogue) .honda-photo>img.hc-scenic-photo{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;padding:0;mix-blend-mode:normal}

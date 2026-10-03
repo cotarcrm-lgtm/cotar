@@ -1,0 +1,11 @@
+# Reservas Supabase no COTAR
+
+- Origem: `public.reservas` no projeto Supabase `sniypzxgkmybtxqpcnpa`. O CRM segue em D1/R2; somente as cotas passam por esta integração.
+- `#catalogo-cotas` mostra a ocorrência mais recente de cada par `(loja,cota)` quando o status é `Reservado` **e** `media_percentual` está preenchida. `Reservado Digitado` não aparece. A gestão em `#reservas` mostra ambos os status, inclusive cotas sem média. Busca e paginação de 24 itens usam o servidor.
+- `#reserva/<id>` é a página de edição individual. Grupo é escolhido entre os registros `Aptos` da tabela privada `cotar.grupos_consorcio_honda`; a média de agosto da planilha pode preencher o campo da cota por escolha explícita do gestor. No banco, 0,45 representa 45%.
+- A planilha `grupos Brasil consorcio Honda (2)3.xlsx` (SHA-256 `7f1207dbe55e9fc057834f92ee2c41b95c9521f65984a113547899768d9f276d`) foi importada com 5.620 grupos de situação reconhecida: 2.947 Aptos, 659 Não Apto e 2.014 Encerrado. Linhas de resumo/inconsistentes ficaram fora da tabela.
+- Para exibição, total estimado do plano = parcela atual × prazo; valor da média = total estimado × `media_percentual`. O simulador projeta nova parcela = máximo(0, saldo estimado das parcelas restantes − lance) ÷ parcelas restantes, usando a próxima parcela como base do saldo. O contrato pode aplicar amortização, seguro e reajustes de outra forma; o resultado é uma projeção, não uma proposta da administradora.
+- Cargos com Leads ou Vendas podem consultar o catálogo. Administrador, Diretor, Gerente Corporativo, Gerente Comercial e Administrativo com acesso à tela Vendas podem editar a coleta mais recente.
+- A edição valida tipos e intervalos, exige `revisao` atual e preserva o histórico de coletas anteriores. Não apaga dados.
+- O Site confere a sessão e o cargo antes de encaminhar para a função `cotar-reservas`. A função exige chave secreta exclusiva; o Supabase guarda apenas o SHA-256 em `cotar.settings`. O segredo fica em `COTAR_RESERVAS_KEY` no Site, não no navegador. `public.reservas` conserva RLS habilitado sem políticas públicas.
+- A função usa `SUPABASE_DB_URL`, fornecida pelo Supabase, com consultas parametrizadas. `COTAR_RESERVAS_URL` aponta para a função implantada.

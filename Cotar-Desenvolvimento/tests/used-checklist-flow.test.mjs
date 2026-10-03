@@ -1,0 +1,46 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {JSDOM} from 'jsdom';
+import {mountUsedModule} from '../public/used-module.js';
+
+test('salvar encerra o indicador e avançar abre checklist com orçamento persistido',async()=>{
+ const dom=new JSDOM('<main id="root"></main>',{url:'https://example.test'});globalThis.FileReader=dom.window.FileReader;
+ const root=dom.window.document.querySelector('#root');let saved=null;
+ const api=async(path,options={})=>{if(path==='used-evaluations'&&!options.method)return {items:saved?[{id:saved.id,plate:saved.plate,stage:saved.stage}]:[]};if(options.method){const body=JSON.parse(options.body);saved={...body,id:'test-id',version:(saved?.version||0)+1,createdAt:'2026-09-29T00:00:00Z',completedAt:body.finalize?'2026-09-29T12:00:00Z':'',status:body.finalize?'Aguardando decisão':'Em andamento'};return saved}return saved};
+ const dispose=mountUsedModule(root,{page:'seminovos-avaliacoes',api,me:{id:'user',name:'CARLOS',storeId:'store'},stores:[{id:'store',name:'Loja'}]});
+ await new Promise(resolve=>setTimeout(resolve,0));
+ assert.match(root.querySelector('.used-reference-title h1').textContent,/Consultas do veículo/);
+ assert.equal(root.querySelectorAll('.used-query').length,8);
+ assert.equal(root.querySelector('[data-consultation-progress]').value,0);
+ assert.ok(root.querySelector('.used-reference-identity'));
+ root.querySelector('#used-form').dispatchEvent(new dom.window.Event('submit',{bubbles:true,cancelable:true}));
+ await new Promise(resolve=>setTimeout(resolve,0));
+ assert.match(root.textContent,/Consultas salvas/);assert.equal(root.querySelector('#used-form button[type="submit"]').disabled,false);
+ root.querySelector('#used-next').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.match(root.textContent,/Checklist da motocicleta/);assert.equal(saved.stage,'Checklist');
+ assert.equal(root.querySelectorAll('[data-question]').length,20);assert.equal(root.querySelectorAll('[data-group=mechanics] [data-checklist]').length,18);assert.equal(root.querySelectorAll('[data-group=aesthetics] [data-checklist]').length,33);assert.equal(root.querySelectorAll('[data-group=services] [data-checklist]').length,6);
+ const answer=root.querySelector('[data-question=firstOwner] input[value=SIM]');answer.checked=true;answer.dispatchEvent(new dom.window.Event('change',{bubbles:true}));
+ const cost=root.querySelector('[data-checklist="engineCondition"] [data-check-field="cost"]');cost.value='250';cost.dispatchEvent(new dom.window.Event('input',{bubbles:true}));assert.match(root.querySelector('#used-preparation-total').textContent,/250,00/);
+ root.querySelector('#used-checklist-form').dispatchEvent(new dom.window.Event('submit',{bubbles:true,cancelable:true}));await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.checklist.engineCondition.cost,250);assert.equal(saved.vehicleAnswers.firstOwner,'SIM');assert.match(root.textContent,/Checklist salvo/);assert.equal(root.querySelector('#used-checklist-form button[type="submit"]').disabled,false);
+ root.querySelector('#used-next-vehicle').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.stage,'Veículo');assert.match(root.textContent,/Informações gerais/);assert.match(root.textContent,/Informações comerciais/);assert.equal(root.querySelectorAll('[data-vehicle-file]').length,10);assert.ok(root.querySelector('[data-commercial-field="purchasePrice"]'));assert.ok(root.querySelector('[data-vehicle-field="engineNumber"]'));
+ const color=root.querySelector('[data-vehicle-field="color"]');color.value='VERMELHA';color.dispatchEvent(new dom.window.Event('input',{bubbles:true}));
+ const purchase=root.querySelector('[data-commercial-field="purchasePrice"]');purchase.value='R$ 15.000,00';purchase.dispatchEvent(new dom.window.Event('input',{bubbles:true}));assert.match(root.querySelector('[data-commercial-summary="total"]').textContent,/15\.250,00/);
+ root.querySelector('#used-vehicle-form').dispatchEvent(new dom.window.Event('submit',{bubbles:true,cancelable:true}));await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.vehicleDetails.color,'VERMELHA');assert.equal(saved.commercial.purchasePrice,15000);assert.match(root.textContent,/Dados do veículo salvos/);assert.equal(root.querySelector('#used-vehicle-form button[type="submit"]').disabled,false);
+ root.querySelector('#used-vehicle-back').click();root.querySelector('#used-next-vehicle').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(root.querySelector('[data-vehicle-field="color"]').value,'VERMELHA');
+ root.querySelector('#used-next-client').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.stage,'Cliente');assert.match(root.textContent,/Etapa Cliente/);assert.match(root.textContent,/Dados do veículo salvos/);
+ assert.equal(root.querySelectorAll('[data-client-file]').length,5);
+ for(const [key,value] of Object.entries({cpf:'52998224725',name:'MARIA SILVA',rg:'12345',birthDate:'1990-01-02',phone:'11999999999',email:'maria@example.com',cep:'01001000',street:'PRAÇA DA SÉ',number:'1',district:'SÉ',city:'SÃO PAULO',state:'SP'})){const input=root.querySelector(`[data-client-field="${key}"]`);input.value=value;input.dispatchEvent(new dom.window.Event('input',{bubbles:true}))}
+ root.querySelector('#used-client-form').dispatchEvent(new dom.window.Event('submit',{bubbles:true,cancelable:true}));await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.clientDetails.name,'MARIA SILVA');assert.equal(root.querySelector('#used-client-form button[type="submit"]').disabled,false);
+ dom.window.HTMLAnchorElement.prototype.click=function(){};
+ root.querySelector('#used-finalize').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.stage,'Fechamento');assert.match(root.textContent,/Valor que o cliente recebe/);assert.equal(root.querySelector('#used-closing-tax'),null);root.querySelector('#used-closing-finalize').click();await new Promise(resolve=>setTimeout(resolve,0));
+ assert.equal(saved.finalize,true);assert.equal(dom.window.location.hash,'#seminovos-captacoes/test-id');assert.ok(root.querySelector('#used-download'));
+ root.querySelector('#used-closing-back').click();root.querySelector('#used-client-back').click();assert.equal(root.querySelector('[data-vehicle-field="color"]').value,'VERMELHA');
+ dispose();dom.window.close();
+});

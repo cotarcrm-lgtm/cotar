@@ -1,0 +1,33 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {saveModelCashPrice,saveModelImage,catalogue,catalogueFor} from '../server/consortium.js';
+import imageUpdates from '../public/honda-image-updates.js';
+const modelCode=catalogue.plans.find(p=>p.administratorId==='honda').modelCode;
+const all={stores:[{id:'loja-a',name:'Loja A',companyId:'co',regionId:'reg',status:'Ativo'},{id:'loja-b',name:'Loja B',companyId:'co',regionId:'reg',status:'Ativo'}],regions:[{id:'reg',groupId:'group'}],users:[]};
+const store=new Map();const db={prepare(sql){return {bind(...values){return {run:async()=>{store.set(values[0],values[1]);return {meta:{changes:1}}},all:async()=>({results:[...store].filter(([key])=>key.startsWith('catalogue')&&key.includes(':co:')).map(([key,value])=>({key,value}))})}}}}};
+test('preços Honda são independentes por loja e o cargo respeita o alcance',async()=>{
+ const admin={role:'Administrador',companyId:'co',storeId:'loja-a'},manager={role:'Gerente Comercial',companyId:'co',storeId:'loja-a'};
+ await assert.rejects(()=>saveModelCashPrice(db,{role:'Vendedor',companyId:'co',storeId:'loja-a'},{storeId:'loja-a',modelCode,cashPriceCents:2000000},all),e=>e.status===403);
+ await assert.rejects(()=>saveModelCashPrice(db,manager,{storeId:'loja-b',modelCode,cashPriceCents:2000000},all),e=>e.status===403);
+ await assert.rejects(()=>saveModelCashPrice(db,admin,{storeId:'loja-a',modelCode,cashPriceCents:20.5},all),/válido/);
+ await saveModelCashPrice(db,admin,{storeId:'loja-a',modelCode,cashPriceCents:2000000},all);
+ await saveModelCashPrice(db,admin,{storeId:'loja-b',modelCode,cashPriceCents:2300000},all);
+ await saveModelCashPrice(db,manager,{storeId:'loja-a',modelCode,cashPriceCents:2000000},all);
+ assert.equal(store.get(`catalogue-price:co:loja-a:${modelCode}`),'2000000');
+ assert.equal(store.get(`catalogue-price:co:loja-b:${modelCode}`),'2300000');
+ const first=await catalogueFor(db,{administratorIds:['honda']},admin,all);
+ assert.equal(first.plans.find(p=>p.modelCode===modelCode).cashPriceCents,2000000);
+ assert.equal(first.storePrices['loja-b'][modelCode],2300000);
+ assert.equal(first.priceStores.length,2);
+ const second=await catalogueFor(db,{administratorIds:['honda']},{...manager,storeId:'loja-b'},all);
+ assert.equal(second.plans.find(p=>p.modelCode===modelCode).cashPriceCents,2300000);
+ assert.equal(second.priceStores.length,1);
+});
+test('foto manual é salva para a empresa e só cargos autorizados podem alterá-la',async()=>{
+ const admin={role:'Administrador',companyId:'co',storeId:'loja-a'},imageData=imageUpdates['*XRE 300 ABS'];
+ await assert.rejects(()=>saveModelImage(db,{role:'Vendedor',companyId:'co',storeId:'loja-a'},{modelCode:'*XRE 300 ABS',imageData}),e=>e.status===403);
+ await assert.rejects(()=>saveModelImage(db,admin,{modelCode:'*XRE SAHARA',imageData:'data:image/webp;base64,YmFk'}),/inválido/);
+ await saveModelImage(db,admin,{modelCode:'*XRE 300 ABS',imageData});
+ const available=await catalogueFor(db,{administratorIds:['honda']},admin,all);
+ assert.equal(available.modelImages['*XRE 300 ABS'],imageData);
+});

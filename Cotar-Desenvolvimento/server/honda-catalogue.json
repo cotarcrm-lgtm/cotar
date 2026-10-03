@@ -1,0 +1,6416 @@
+{
+  "id": "honda-nacional-2026-08-24",
+  "effectiveDate": "2026-08-24",
+  "sourceName": "10- Planos NACIONAL 24 AGOSTO 2026.pdf",
+  "sourceSha256": "ee5f833775b03d4c94c646bd66672b836a0e3977ecb56fa8cefc0cf0c079f355",
+  "plans": [
+    {
+      "id": "honda-20260824-p1-m1-12",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1445000,
+      "installmentWithInsuranceCents": 120834,
+      "installmentWithoutInsuranceCents": 120417,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-18",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1450946,
+      "installmentWithInsuranceCents": 81027,
+      "installmentWithoutInsuranceCents": 80608,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-24",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1456893,
+      "installmentWithInsuranceCents": 61124,
+      "installmentWithoutInsuranceCents": 60704,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-36",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1480679,
+      "installmentWithInsuranceCents": 41557,
+      "installmentWithoutInsuranceCents": 41130,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-48",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1492572,
+      "installmentWithInsuranceCents": 31544,
+      "installmentWithoutInsuranceCents": 31095,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-60",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1510411,
+      "installmentWithInsuranceCents": 25610,
+      "installmentWithoutInsuranceCents": 25174,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m1-80",
+      "model": "POP 110i",
+      "modelCode": "*POP 110i",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1189300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1546090,
+      "installmentWithInsuranceCents": 19773,
+      "installmentWithoutInsuranceCents": 19326,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-12",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1589463,
+      "installmentWithInsuranceCents": 132914,
+      "installmentWithoutInsuranceCents": 132455,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-18",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1596004,
+      "installmentWithInsuranceCents": 89128,
+      "installmentWithoutInsuranceCents": 88667,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-24",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1602545,
+      "installmentWithInsuranceCents": 67235,
+      "installmentWithoutInsuranceCents": 66773,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-36",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1628709,
+      "installmentWithInsuranceCents": 45712,
+      "installmentWithoutInsuranceCents": 45242,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-48",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1641791,
+      "installmentWithInsuranceCents": 34698,
+      "installmentWithoutInsuranceCents": 34204,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-60",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1661414,
+      "installmentWithInsuranceCents": 28170,
+      "installmentWithoutInsuranceCents": 27690,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m2-80",
+      "model": "POP 110i +10",
+      "modelCode": "POP110I+10",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1308200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1700660,
+      "installmentWithInsuranceCents": 21749,
+      "installmentWithoutInsuranceCents": 21258,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-12",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1840725,
+      "installmentWithInsuranceCents": 153925,
+      "installmentWithoutInsuranceCents": 153394,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-18",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1848300,
+      "installmentWithInsuranceCents": 103217,
+      "installmentWithoutInsuranceCents": 102683,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-24",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1855875,
+      "installmentWithInsuranceCents": 77864,
+      "installmentWithoutInsuranceCents": 77328,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-36",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1886175,
+      "installmentWithInsuranceCents": 52938,
+      "installmentWithoutInsuranceCents": 52394,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-48",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1901325,
+      "installmentWithInsuranceCents": 40183,
+      "installmentWithoutInsuranceCents": 39611,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-60",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1924050,
+      "installmentWithInsuranceCents": 32623,
+      "installmentWithoutInsuranceCents": 32068,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m3-80",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1515000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1969500,
+      "installmentWithInsuranceCents": 25187,
+      "installmentWithoutInsuranceCents": 24619,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-12",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2278368,
+      "installmentWithInsuranceCents": 190522,
+      "installmentWithoutInsuranceCents": 189864,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-18",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2287744,
+      "installmentWithInsuranceCents": 127757,
+      "installmentWithoutInsuranceCents": 127097,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-24",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2297120,
+      "installmentWithInsuranceCents": 96376,
+      "installmentWithoutInsuranceCents": 95713,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-36",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2334624,
+      "installmentWithInsuranceCents": 65525,
+      "installmentWithoutInsuranceCents": 64851,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-48",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2353376,
+      "installmentWithInsuranceCents": 49736,
+      "installmentWithoutInsuranceCents": 49029,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-60",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2381504,
+      "installmentWithInsuranceCents": 40379,
+      "installmentWithoutInsuranceCents": 39692,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m4-80",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1875200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2437760,
+      "installmentWithInsuranceCents": 31176,
+      "installmentWithoutInsuranceCents": 30472,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-12",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1945944,
+      "installmentWithInsuranceCents": 162724,
+      "installmentWithoutInsuranceCents": 162162,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-18",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1953952,
+      "installmentWithInsuranceCents": 109117,
+      "installmentWithoutInsuranceCents": 108553,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-24",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1961960,
+      "installmentWithInsuranceCents": 82315,
+      "installmentWithoutInsuranceCents": 81748,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-36",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 1993992,
+      "installmentWithInsuranceCents": 55964,
+      "installmentWithoutInsuranceCents": 55389,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-48",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2010008,
+      "installmentWithInsuranceCents": 42480,
+      "installmentWithoutInsuranceCents": 41875,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-60",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2034032,
+      "installmentWithInsuranceCents": 34488,
+      "installmentWithoutInsuranceCents": 33901,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m5-80",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1601600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2082080,
+      "installmentWithInsuranceCents": 26627,
+      "installmentWithoutInsuranceCents": 26026,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-12",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2549070,
+      "installmentWithInsuranceCents": 213159,
+      "installmentWithoutInsuranceCents": 212423,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-18",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2559560,
+      "installmentWithInsuranceCents": 142937,
+      "installmentWithoutInsuranceCents": 142198,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-24",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2570050,
+      "installmentWithInsuranceCents": 107827,
+      "installmentWithoutInsuranceCents": 107085,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-36",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2612010,
+      "installmentWithInsuranceCents": 73310,
+      "installmentWithoutInsuranceCents": 72556,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-48",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2632990,
+      "installmentWithInsuranceCents": 55646,
+      "installmentWithoutInsuranceCents": 54854,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-60",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2664460,
+      "installmentWithInsuranceCents": 45177,
+      "installmentWithoutInsuranceCents": 44408,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m6-80",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2098000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2727400,
+      "installmentWithInsuranceCents": 34880,
+      "installmentWithoutInsuranceCents": 34093,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m7-24",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2301300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2819093,
+      "installmentWithInsuranceCents": 118276,
+      "installmentWithoutInsuranceCents": 117462,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m7-36",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2301300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2865119,
+      "installmentWithInsuranceCents": 80414,
+      "installmentWithoutInsuranceCents": 79587,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m7-48",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2301300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2888132,
+      "installmentWithInsuranceCents": 61038,
+      "installmentWithoutInsuranceCents": 60169,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m7-60",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2301300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2922651,
+      "installmentWithInsuranceCents": 49555,
+      "installmentWithoutInsuranceCents": 48711,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m7-80",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2301300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2991690,
+      "installmentWithInsuranceCents": 38260,
+      "installmentWithoutInsuranceCents": 37396,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m8-24",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2841700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3481083,
+      "installmentWithInsuranceCents": 146050,
+      "installmentWithoutInsuranceCents": 145045,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m8-36",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2841700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3537917,
+      "installmentWithInsuranceCents": 99297,
+      "installmentWithoutInsuranceCents": 98275,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m8-48",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2841700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3566334,
+      "installmentWithInsuranceCents": 75371,
+      "installmentWithoutInsuranceCents": 74299,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m8-60",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2841700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3608959,
+      "installmentWithInsuranceCents": 61191,
+      "installmentWithoutInsuranceCents": 60149,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m8-80",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2841700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3694210,
+      "installmentWithInsuranceCents": 47244,
+      "installmentWithoutInsuranceCents": 46178,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-12",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2345315,
+      "installmentWithInsuranceCents": 196120,
+      "installmentWithoutInsuranceCents": 195443,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-18",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2354966,
+      "installmentWithInsuranceCents": 131511,
+      "installmentWithoutInsuranceCents": 130831,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-24",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2364618,
+      "installmentWithInsuranceCents": 99208,
+      "installmentWithoutInsuranceCents": 98526,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-36",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2403224,
+      "installmentWithInsuranceCents": 67450,
+      "installmentWithoutInsuranceCents": 66756,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-48",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2422527,
+      "installmentWithInsuranceCents": 51198,
+      "installmentWithoutInsuranceCents": 50469,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-60",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2451481,
+      "installmentWithInsuranceCents": 41566,
+      "installmentWithoutInsuranceCents": 40858,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m9-80",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 1930300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2509390,
+      "installmentWithInsuranceCents": 32092,
+      "installmentWithoutInsuranceCents": 31367,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-12",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2559155,
+      "installmentWithInsuranceCents": 214002,
+      "installmentWithoutInsuranceCents": 213263,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-18",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2569686,
+      "installmentWithInsuranceCents": 143502,
+      "installmentWithoutInsuranceCents": 142760,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-24",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2580218,
+      "installmentWithInsuranceCents": 108254,
+      "installmentWithoutInsuranceCents": 107509,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-36",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2622344,
+      "installmentWithInsuranceCents": 73600,
+      "installmentWithoutInsuranceCents": 72843,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-48",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2643407,
+      "installmentWithInsuranceCents": 55866,
+      "installmentWithoutInsuranceCents": 55071,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-60",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2675001,
+      "installmentWithInsuranceCents": 45356,
+      "installmentWithoutInsuranceCents": 44583,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m10-80",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2106300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2738190,
+      "installmentWithInsuranceCents": 35018,
+      "installmentWithoutInsuranceCents": 34227,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-12",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2745414,
+      "installmentWithInsuranceCents": 229577,
+      "installmentWithoutInsuranceCents": 228785,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-18",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2756712,
+      "installmentWithInsuranceCents": 153946,
+      "installmentWithoutInsuranceCents": 153151,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-24",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2768010,
+      "installmentWithInsuranceCents": 116133,
+      "installmentWithoutInsuranceCents": 115334,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-36",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2813202,
+      "installmentWithInsuranceCents": 78957,
+      "installmentWithoutInsuranceCents": 78145,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-48",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2835798,
+      "installmentWithInsuranceCents": 59932,
+      "installmentWithoutInsuranceCents": 59079,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-60",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2869692,
+      "installmentWithInsuranceCents": 48657,
+      "installmentWithoutInsuranceCents": 47828,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m11-80",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2259600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 2937480,
+      "installmentWithInsuranceCents": 37567,
+      "installmentWithoutInsuranceCents": 36719,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m12-24",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2453300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3005293,
+      "installmentWithInsuranceCents": 126088,
+      "installmentWithoutInsuranceCents": 125221,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m12-36",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2453300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3054359,
+      "installmentWithInsuranceCents": 85725,
+      "installmentWithoutInsuranceCents": 84843,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m12-48",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2453300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3078892,
+      "installmentWithInsuranceCents": 65070,
+      "installmentWithoutInsuranceCents": 64144,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m12-60",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2453300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3115691,
+      "installmentWithInsuranceCents": 52828,
+      "installmentWithoutInsuranceCents": 51928,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m12-80",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2453300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3189290,
+      "installmentWithInsuranceCents": 40787,
+      "installmentWithoutInsuranceCents": 39866,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m13-24",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2559200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3135020,
+      "installmentWithInsuranceCents": 131531,
+      "installmentWithoutInsuranceCents": 130626,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m13-36",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2559200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3186204,
+      "installmentWithInsuranceCents": 89426,
+      "installmentWithoutInsuranceCents": 88506,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m13-48",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2559200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3211796,
+      "installmentWithInsuranceCents": 67878,
+      "installmentWithoutInsuranceCents": 66912,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m13-60",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2559200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3250184,
+      "installmentWithInsuranceCents": 55108,
+      "installmentWithoutInsuranceCents": 54170,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m13-80",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2559200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3326960,
+      "installmentWithInsuranceCents": 42548,
+      "installmentWithoutInsuranceCents": 41587,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m14-24",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2905800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3559605,
+      "installmentWithInsuranceCents": 149344,
+      "installmentWithoutInsuranceCents": 148317,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m14-36",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2905800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3617721,
+      "installmentWithInsuranceCents": 101537,
+      "installmentWithoutInsuranceCents": 100492,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m14-48",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2905800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3646779,
+      "installmentWithInsuranceCents": 77071,
+      "installmentWithoutInsuranceCents": 75975,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m14-60",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2905800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3690366,
+      "installmentWithInsuranceCents": 62572,
+      "installmentWithoutInsuranceCents": 61506,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m14-80",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2905800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3777540,
+      "installmentWithInsuranceCents": 48310,
+      "installmentWithoutInsuranceCents": 47219,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m15-24",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2656700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3254458,
+      "installmentWithInsuranceCents": 136542,
+      "installmentWithoutInsuranceCents": 135602,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m15-36",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2656700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3307592,
+      "installmentWithInsuranceCents": 92833,
+      "installmentWithoutInsuranceCents": 91878,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m15-48",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2656700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3334159,
+      "installmentWithInsuranceCents": 70464,
+      "installmentWithoutInsuranceCents": 69462,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m15-60",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2656700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3374009,
+      "installmentWithInsuranceCents": 57208,
+      "installmentWithoutInsuranceCents": 56233,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m15-80",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2656700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3453710,
+      "installmentWithInsuranceCents": 44169,
+      "installmentWithoutInsuranceCents": 43171,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m16-24",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3507400,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4296565,
+      "installmentWithInsuranceCents": 180264,
+      "installmentWithoutInsuranceCents": 179024,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m16-36",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3507400,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4366713,
+      "installmentWithInsuranceCents": 122558,
+      "installmentWithoutInsuranceCents": 121298,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m16-48",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3507400,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4401787,
+      "installmentWithInsuranceCents": 93028,
+      "installmentWithoutInsuranceCents": 91704,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m16-60",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3507400,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4454398,
+      "installmentWithInsuranceCents": 75526,
+      "installmentWithoutInsuranceCents": 74240,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m16-80",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3507400,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4559620,
+      "installmentWithInsuranceCents": 58312,
+      "installmentWithoutInsuranceCents": 56995,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m17-24",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3625100,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4440748,
+      "installmentWithInsuranceCents": 186313,
+      "installmentWithoutInsuranceCents": 185031,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m17-36",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3625100,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4513250,
+      "installmentWithInsuranceCents": 126671,
+      "installmentWithoutInsuranceCents": 125368,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m17-48",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3625100,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4549501,
+      "installmentWithInsuranceCents": 96150,
+      "installmentWithoutInsuranceCents": 94781,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m17-60",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3625100,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4603877,
+      "installmentWithInsuranceCents": 78060,
+      "installmentWithoutInsuranceCents": 76731,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m17-80",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3625100,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4712630,
+      "installmentWithInsuranceCents": 60268,
+      "installmentWithoutInsuranceCents": 58908,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m18-24",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3416700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4185458,
+      "installmentWithInsuranceCents": 175602,
+      "installmentWithoutInsuranceCents": 174394,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m18-36",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3416700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4253792,
+      "installmentWithInsuranceCents": 119389,
+      "installmentWithoutInsuranceCents": 118161,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m18-48",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3416700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4287959,
+      "installmentWithInsuranceCents": 90622,
+      "installmentWithoutInsuranceCents": 89332,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m18-60",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3416700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4339209,
+      "installmentWithInsuranceCents": 73573,
+      "installmentWithoutInsuranceCents": 72320,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m18-80",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 3416700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 4441710,
+      "installmentWithInsuranceCents": 56804,
+      "installmentWithoutInsuranceCents": 55521,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m19-24",
+      "model": "CRF 300F",
+      "modelCode": "CRF 300F",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2654000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3251150,
+      "installmentWithInsuranceCents": 136403,
+      "installmentWithoutInsuranceCents": 135465,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m19-36",
+      "model": "CRF 300F",
+      "modelCode": "CRF 300F",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2654000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3304230,
+      "installmentWithInsuranceCents": 92738,
+      "installmentWithoutInsuranceCents": 91784,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m19-48",
+      "model": "CRF 300F",
+      "modelCode": "CRF 300F",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2654000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3330770,
+      "installmentWithInsuranceCents": 70393,
+      "installmentWithoutInsuranceCents": 69391,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m19-60",
+      "model": "CRF 300F",
+      "modelCode": "CRF 300F",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2654000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3370580,
+      "installmentWithInsuranceCents": 57149,
+      "installmentWithoutInsuranceCents": 56176,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p1-m19-80",
+      "model": "CRF 300F",
+      "modelCode": "CRF 300F",
+      "family": "Vou de Honda",
+      "page": 1,
+      "creditCents": 2654000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 3450200,
+      "installmentWithInsuranceCents": 44124,
+      "installmentWithoutInsuranceCents": 43128,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-12",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2006390,
+      "installmentWithInsuranceCents": 167779,
+      "installmentWithoutInsuranceCents": 167199,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-18",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2014647,
+      "installmentWithInsuranceCents": 112506,
+      "installmentWithoutInsuranceCents": 111925,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-24",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2022904,
+      "installmentWithInsuranceCents": 84872,
+      "installmentWithoutInsuranceCents": 84288,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-36",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2055931,
+      "installmentWithInsuranceCents": 57703,
+      "installmentWithoutInsuranceCents": 57109,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-48",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2072444,
+      "installmentWithInsuranceCents": 43799,
+      "installmentWithoutInsuranceCents": 43176,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-60",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2097215,
+      "installmentWithInsuranceCents": 35559,
+      "installmentWithoutInsuranceCents": 34954,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m1-80",
+      "model": "BIZ 125 ES",
+      "modelCode": "*BIZ125 ES",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1515000,
+      "documentationCents": 136350,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2146755,
+      "installmentWithInsuranceCents": 27454,
+      "installmentWithoutInsuranceCents": 26834,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-12",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2483421,
+      "installmentWithInsuranceCents": 207669,
+      "installmentWithoutInsuranceCents": 206952,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-18",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2493641,
+      "installmentWithInsuranceCents": 139255,
+      "installmentWithoutInsuranceCents": 138536,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-24",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2503861,
+      "installmentWithInsuranceCents": 105050,
+      "installmentWithoutInsuranceCents": 104328,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-36",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2544740,
+      "installmentWithInsuranceCents": 71422,
+      "installmentWithoutInsuranceCents": 70687,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-48",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2565180,
+      "installmentWithInsuranceCents": 54213,
+      "installmentWithoutInsuranceCents": 53441,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-60",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2595839,
+      "installmentWithInsuranceCents": 44013,
+      "installmentWithoutInsuranceCents": 43264,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m2-80",
+      "model": "BIZ 125 EX",
+      "modelCode": "*BIZ 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1875200,
+      "documentationCents": 168768,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2657158,
+      "installmentWithInsuranceCents": 33982,
+      "installmentWithoutInsuranceCents": 33214,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-12",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2121079,
+      "installmentWithInsuranceCents": 177369,
+      "installmentWithoutInsuranceCents": 176757,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-18",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2129808,
+      "installmentWithInsuranceCents": 118937,
+      "installmentWithoutInsuranceCents": 118323,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-24",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2138536,
+      "installmentWithInsuranceCents": 89723,
+      "installmentWithoutInsuranceCents": 89106,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-36",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2173451,
+      "installmentWithInsuranceCents": 61001,
+      "installmentWithoutInsuranceCents": 60374,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-48",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2190909,
+      "installmentWithInsuranceCents": 46303,
+      "installmentWithoutInsuranceCents": 45644,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-60",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2217095,
+      "installmentWithInsuranceCents": 37592,
+      "installmentWithoutInsuranceCents": 36952,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m3-80",
+      "model": "ELITE 125",
+      "modelCode": "*ELITE 125",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1601600,
+      "documentationCents": 144144,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2269467,
+      "installmentWithInsuranceCents": 29024,
+      "installmentWithoutInsuranceCents": 28368,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-12",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2752996,
+      "installmentWithInsuranceCents": 230211,
+      "installmentWithoutInsuranceCents": 229416,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-18",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2764325,
+      "installmentWithInsuranceCents": 154372,
+      "installmentWithoutInsuranceCents": 153574,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-24",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2775654,
+      "installmentWithInsuranceCents": 116453,
+      "installmentWithoutInsuranceCents": 115652,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-36",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2820971,
+      "installmentWithInsuranceCents": 79175,
+      "installmentWithoutInsuranceCents": 78360,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-48",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2843629,
+      "installmentWithInsuranceCents": 60098,
+      "installmentWithoutInsuranceCents": 59242,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-60",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2877617,
+      "installmentWithInsuranceCents": 48791,
+      "installmentWithoutInsuranceCents": 47960,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m4-80",
+      "model": "PCX",
+      "modelCode": "*PCX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2098000,
+      "documentationCents": 167840,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2945592,
+      "installmentWithInsuranceCents": 37670,
+      "installmentWithoutInsuranceCents": 36820,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m5-24",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2301300,
+      "documentationCents": 184104,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3044620,
+      "installmentWithInsuranceCents": 127738,
+      "installmentWithoutInsuranceCents": 126859,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m5-36",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2301300,
+      "documentationCents": 184104,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3094328,
+      "installmentWithInsuranceCents": 86847,
+      "installmentWithoutInsuranceCents": 85954,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m5-48",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2301300,
+      "documentationCents": 184104,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3119182,
+      "installmentWithInsuranceCents": 65921,
+      "installmentWithoutInsuranceCents": 64983,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m5-60",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2301300,
+      "documentationCents": 184104,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3156463,
+      "installmentWithInsuranceCents": 53519,
+      "installmentWithoutInsuranceCents": 52608,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m5-80",
+      "model": "PCX ABS",
+      "modelCode": "*PCX ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2301300,
+      "documentationCents": 184104,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3231025,
+      "installmentWithInsuranceCents": 41321,
+      "installmentWithoutInsuranceCents": 40388,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m6-24",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2841700,
+      "documentationCents": 227336,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3759569,
+      "installmentWithInsuranceCents": 157734,
+      "installmentWithoutInsuranceCents": 156649,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m6-36",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2841700,
+      "documentationCents": 227336,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3820950,
+      "installmentWithInsuranceCents": 107241,
+      "installmentWithoutInsuranceCents": 106137,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m6-48",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2841700,
+      "documentationCents": 227336,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3851640,
+      "installmentWithInsuranceCents": 81401,
+      "installmentWithoutInsuranceCents": 80243,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m6-60",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2841700,
+      "documentationCents": 227336,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3897676,
+      "installmentWithInsuranceCents": 66087,
+      "installmentWithoutInsuranceCents": 64961,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m6-80",
+      "model": "Honda ADV",
+      "modelCode": "*HONDA ADV",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2841700,
+      "documentationCents": 227336,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3989747,
+      "installmentWithInsuranceCents": 51024,
+      "installmentWithoutInsuranceCents": 49872,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-12",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2556393,
+      "installmentWithInsuranceCents": 213771,
+      "installmentWithoutInsuranceCents": 213033,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-18",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2566913,
+      "installmentWithInsuranceCents": 143347,
+      "installmentWithoutInsuranceCents": 142606,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-24",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2577433,
+      "installmentWithInsuranceCents": 108137,
+      "installmentWithoutInsuranceCents": 107393,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-36",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2619514,
+      "installmentWithInsuranceCents": 73521,
+      "installmentWithoutInsuranceCents": 72764,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-48",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2640554,
+      "installmentWithInsuranceCents": 55806,
+      "installmentWithoutInsuranceCents": 55012,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-60",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2672114,
+      "installmentWithInsuranceCents": 45307,
+      "installmentWithoutInsuranceCents": 44535,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m7-80",
+      "model": "CG 160 START",
+      "modelCode": "*START 160",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 1930300,
+      "documentationCents": 173727,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2735235,
+      "installmentWithInsuranceCents": 34980,
+      "installmentWithoutInsuranceCents": 34190,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-12",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2789478,
+      "installmentWithInsuranceCents": 233262,
+      "installmentWithoutInsuranceCents": 232457,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-18",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2800958,
+      "installmentWithInsuranceCents": 156417,
+      "installmentWithoutInsuranceCents": 155609,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-24",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2812437,
+      "installmentWithInsuranceCents": 117997,
+      "installmentWithoutInsuranceCents": 117185,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-36",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2858354,
+      "installmentWithInsuranceCents": 80224,
+      "installmentWithoutInsuranceCents": 79399,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-48",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2881313,
+      "installmentWithInsuranceCents": 60894,
+      "installmentWithoutInsuranceCents": 60027,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-60",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2915751,
+      "installmentWithInsuranceCents": 49438,
+      "installmentWithoutInsuranceCents": 48596,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m8-80",
+      "model": "CG 160 FAN",
+      "modelCode": "*FAN 160 ESDi",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2106300,
+      "documentationCents": 189567,
+      "documentationPercent": 9.0,
+      "planWithoutInsuranceCents": 2984627,
+      "installmentWithInsuranceCents": 38170,
+      "installmentWithoutInsuranceCents": 37308,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-12",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2965047,
+      "installmentWithInsuranceCents": 247943,
+      "installmentWithoutInsuranceCents": 247087,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 12,
+      "contemplations": 26,
+      "participants": 312,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 16.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.3465,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-18",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2977249,
+      "installmentWithInsuranceCents": 166262,
+      "installmentWithoutInsuranceCents": 165403,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 18,
+      "contemplations": 26,
+      "participants": 468,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-24",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 2989451,
+      "installmentWithInsuranceCents": 125423,
+      "installmentWithoutInsuranceCents": 124560,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-36",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3038258,
+      "installmentWithInsuranceCents": 85273,
+      "installmentWithoutInsuranceCents": 84396,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-48",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3062662,
+      "installmentWithInsuranceCents": 64727,
+      "installmentWithoutInsuranceCents": 63805,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-60",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3099267,
+      "installmentWithInsuranceCents": 52549,
+      "installmentWithoutInsuranceCents": 51654,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m9-80",
+      "model": "CG 160 TITAN",
+      "modelCode": "*TITAN 160 EX",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2259600,
+      "documentationCents": 180768,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3172478,
+      "installmentWithInsuranceCents": 40572,
+      "installmentWithoutInsuranceCents": 39656,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m10-24",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2453300,
+      "documentationCents": 196264,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3245716,
+      "installmentWithInsuranceCents": 136175,
+      "installmentWithoutInsuranceCents": 135238,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m10-36",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2453300,
+      "documentationCents": 196264,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3298707,
+      "installmentWithInsuranceCents": 92583,
+      "installmentWithoutInsuranceCents": 91631,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m10-48",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2453300,
+      "documentationCents": 196264,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3325203,
+      "installmentWithInsuranceCents": 70275,
+      "installmentWithoutInsuranceCents": 69275,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m10-60",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2453300,
+      "documentationCents": 196264,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3364946,
+      "installmentWithInsuranceCents": 57054,
+      "installmentWithoutInsuranceCents": 56082,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m10-80",
+      "model": "NXR 160 BROS CBS",
+      "modelCode": "*BROS 160 ESDD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2453300,
+      "documentationCents": 196264,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3444433,
+      "installmentWithInsuranceCents": 44050,
+      "installmentWithoutInsuranceCents": 43055,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m11-24",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2559200,
+      "documentationCents": 204736,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3385822,
+      "installmentWithInsuranceCents": 142053,
+      "installmentWithoutInsuranceCents": 141076,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m11-36",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2559200,
+      "documentationCents": 204736,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3441100,
+      "installmentWithInsuranceCents": 96580,
+      "installmentWithoutInsuranceCents": 95586,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m11-48",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2559200,
+      "documentationCents": 204736,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3468740,
+      "installmentWithInsuranceCents": 73309,
+      "installmentWithoutInsuranceCents": 72265,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m11-60",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2559200,
+      "documentationCents": 204736,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3510199,
+      "installmentWithInsuranceCents": 59517,
+      "installmentWithoutInsuranceCents": 58503,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m11-80",
+      "model": "NXR 160 BROS ABS",
+      "modelCode": "*BROS160ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2559200,
+      "documentationCents": 204736,
+      "documentationPercent": 8.0,
+      "planWithoutInsuranceCents": 3593117,
+      "installmentWithInsuranceCents": 45951,
+      "installmentWithoutInsuranceCents": 44914,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m12-24",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2905800,
+      "documentationCents": 188877,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3790979,
+      "installmentWithInsuranceCents": 159052,
+      "installmentWithoutInsuranceCents": 157957,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m12-36",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2905800,
+      "documentationCents": 188877,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3852873,
+      "installmentWithInsuranceCents": 108137,
+      "installmentWithoutInsuranceCents": 107024,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m12-48",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2905800,
+      "documentationCents": 188877,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3883820,
+      "installmentWithInsuranceCents": 82081,
+      "installmentWithoutInsuranceCents": 80913,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m12-60",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2905800,
+      "documentationCents": 188877,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3930240,
+      "installmentWithInsuranceCents": 66639,
+      "installmentWithoutInsuranceCents": 65504,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m12-80",
+      "model": "CB 300F TWISTER ABS",
+      "modelCode": "*TWISTER ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2905800,
+      "documentationCents": 188877,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4023080,
+      "installmentWithInsuranceCents": 51450,
+      "installmentWithoutInsuranceCents": 50289,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m13-24",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2656700,
+      "documentationCents": 172686,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3465997,
+      "installmentWithInsuranceCents": 145417,
+      "installmentWithoutInsuranceCents": 144417,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m13-36",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2656700,
+      "documentationCents": 172686,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3522585,
+      "installmentWithInsuranceCents": 98867,
+      "installmentWithoutInsuranceCents": 97850,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m13-48",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2656700,
+      "documentationCents": 172686,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3550879,
+      "installmentWithInsuranceCents": 75045,
+      "installmentWithoutInsuranceCents": 73977,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m13-60",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2656700,
+      "documentationCents": 172686,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3593320,
+      "installmentWithInsuranceCents": 60926,
+      "installmentWithoutInsuranceCents": 59889,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m13-80",
+      "model": "XRE 190",
+      "modelCode": "*XRE 190",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 2656700,
+      "documentationCents": 172686,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 3678201,
+      "installmentWithInsuranceCents": 47039,
+      "installmentWithoutInsuranceCents": 45978,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m14-24",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3507400,
+      "documentationCents": 227981,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4575842,
+      "installmentWithInsuranceCents": 191981,
+      "installmentWithoutInsuranceCents": 190660,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m14-36",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3507400,
+      "documentationCents": 227981,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4650549,
+      "installmentWithInsuranceCents": 130525,
+      "installmentWithoutInsuranceCents": 129182,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m14-48",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3507400,
+      "documentationCents": 227981,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4687903,
+      "installmentWithInsuranceCents": 99075,
+      "installmentWithoutInsuranceCents": 97665,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m14-60",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3507400,
+      "documentationCents": 227981,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4743934,
+      "installmentWithInsuranceCents": 80435,
+      "installmentWithoutInsuranceCents": 79066,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m14-80",
+      "model": "XRE 300 ABS SA",
+      "modelCode": "*XRE 300 ABS",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3507400,
+      "documentationCents": 227981,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4855995,
+      "installmentWithInsuranceCents": 62102,
+      "installmentWithoutInsuranceCents": 60700,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m15-24",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3625100,
+      "documentationCents": 235632,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4729396,
+      "installmentWithInsuranceCents": 198424,
+      "installmentWithoutInsuranceCents": 197058,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m15-36",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3625100,
+      "documentationCents": 235632,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4806611,
+      "installmentWithInsuranceCents": 134905,
+      "installmentWithoutInsuranceCents": 133517,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m15-48",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3625100,
+      "documentationCents": 235632,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4845218,
+      "installmentWithInsuranceCents": 102399,
+      "installmentWithoutInsuranceCents": 100942,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m15-60",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3625100,
+      "documentationCents": 235632,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4903129,
+      "installmentWithInsuranceCents": 83134,
+      "installmentWithoutInsuranceCents": 81719,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m15-80",
+      "model": "XRE300 SAHARA ADV",
+      "modelCode": "*XRE SAHARA",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3625100,
+      "documentationCents": 235632,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 5018951,
+      "installmentWithInsuranceCents": 64186,
+      "installmentWithoutInsuranceCents": 62737,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m16-24",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3416700,
+      "documentationCents": 222086,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4457512,
+      "installmentWithInsuranceCents": 187017,
+      "installmentWithoutInsuranceCents": 185730,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 24,
+      "contemplations": 26,
+      "participants": 624,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 17.5,
+      "reservePercent": 5,
+      "insurancePercent": 0.6929,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m16-36",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3416700,
+      "documentationCents": 222086,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4530288,
+      "installmentWithInsuranceCents": 127149,
+      "installmentWithoutInsuranceCents": 125841,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 36,
+      "contemplations": 26,
+      "participants": 936,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 19.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.0394,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m16-48",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3416700,
+      "documentationCents": 222086,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4566676,
+      "installmentWithInsuranceCents": 96513,
+      "installmentWithoutInsuranceCents": 95139,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 48,
+      "contemplations": 20,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 20.5,
+      "reservePercent": 5,
+      "insurancePercent": 1.4436,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m16-60",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3416700,
+      "documentationCents": 222086,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4621258,
+      "installmentWithInsuranceCents": 78355,
+      "installmentWithoutInsuranceCents": 77021,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 60,
+      "contemplations": 16,
+      "participants": 960,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 22,
+      "reservePercent": 5,
+      "insurancePercent": 1.7323,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p2-m16-80",
+      "model": "XR300 L TORNADO",
+      "modelCode": "XR300LTORNAD",
+      "family": "Vou de Honda+",
+      "page": 2,
+      "creditCents": 3416700,
+      "documentationCents": 222086,
+      "documentationPercent": 6.5,
+      "planWithoutInsuranceCents": 4730421,
+      "installmentWithInsuranceCents": 60496,
+      "installmentWithoutInsuranceCents": 59130,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 80,
+      "contemplations": 12,
+      "participants": 960,
+      "dueDays": [
+        10,
+        15
+      ],
+      "adminPercent": 25,
+      "reservePercent": 5,
+      "insurancePercent": 2.3098,
+      "contemplationRule": "1ª Sorteio; 2ª Sorteio; 3ª Lance Fixo; 4ª Lance Livre"
+    },
+    {
+      "id": "honda-20260824-p3-m1-72",
+      "model": "CB 500 HORNET",
+      "modelCode": "CB500 HORNET",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 4620700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 5591047,
+      "installmentWithInsuranceCents": 78772,
+      "installmentWithoutInsuranceCents": 77653,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m2-72",
+      "model": "CB 750 HORNET",
+      "modelCode": "CB750 HORNET",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 5694300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 6890103,
+      "installmentWithInsuranceCents": 97074,
+      "installmentWithoutInsuranceCents": 95696,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m3-72",
+      "model": "CB1000 HORNET 70%",
+      "modelCode": "HORNET100070",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 5680700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 6873647,
+      "installmentWithInsuranceCents": 96842,
+      "installmentWithoutInsuranceCents": 95467,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m4-72",
+      "model": "NX 500",
+      "modelCode": "NX 500",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 4913700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 5945577,
+      "installmentWithInsuranceCents": 83767,
+      "installmentWithoutInsuranceCents": 82577,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m5-72",
+      "model": "NC 750X",
+      "modelCode": "*NC 750X ABS",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 6001600,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 7261936,
+      "installmentWithInsuranceCents": 102313,
+      "installmentWithoutInsuranceCents": 100860,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m6-72",
+      "model": "XL 750",
+      "modelCode": "XL 750 TRANSALP",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 6938300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 8395343,
+      "installmentWithInsuranceCents": 118281,
+      "installmentWithoutInsuranceCents": 116602,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m7-72",
+      "model": "CB 650R",
+      "modelCode": "CB 650R",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 6309900,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 7634979,
+      "installmentWithInsuranceCents": 107568,
+      "installmentWithoutInsuranceCents": 106041,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m8-72",
+      "model": "CRF 1100L AFRICA TWIN 70%",
+      "modelCode": "CRF1100L70%",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 6323700,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 7651677,
+      "installmentWithInsuranceCents": 107804,
+      "installmentWithoutInsuranceCents": 106273,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p3-m9-72",
+      "model": "TRX 420",
+      "modelCode": "*TRX 420 FM",
+      "family": "Advance",
+      "page": 3,
+      "creditCents": 5855000,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 7084550,
+      "installmentWithInsuranceCents": 99813,
+      "installmentWithoutInsuranceCents": 98397,
+      "excludedStates": [
+        "AC",
+        "AM",
+        "RO",
+        "RR"
+      ],
+      "months": 72,
+      "contemplations": 7,
+      "participants": 504,
+      "dueDays": [
+        10
+      ],
+      "adminPercent": 15,
+      "reservePercent": 6,
+      "insurancePercent": 1.44,
+      "contemplationRule": "1ª Sorteio; 2ª Lance Livre",
+      "dilutedBidPercent": null
+    },
+    {
+      "id": "honda-20260824-p4-m1-18",
+      "model": "M&M ESSENCIAL",
+      "modelCode": "MM ESSENC",
+      "family": "Motores & Máquinas",
+      "page": 4,
+      "creditCents": 192900,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 235338,
+      "installmentWithInsuranceCents": 13142,
+      "installmentWithoutInsuranceCents": 13074,
+      "excludedStates": [],
+      "months": 18,
+      "contemplations": 4,
+      "participants": 72,
+      "dueDays": [
+        1
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1 por sorteio; 3 por lance livre",
+      "dilutedBidPercent": 20
+    },
+    {
+      "id": "honda-20260824-p4-m2-18",
+      "model": "M&M ESSENCIAL+",
+      "modelCode": "MM ESSENC+",
+      "family": "Motores & Máquinas",
+      "page": 4,
+      "creditCents": 250200,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 305244,
+      "installmentWithInsuranceCents": 17046,
+      "installmentWithoutInsuranceCents": 16958,
+      "excludedStates": [],
+      "months": 18,
+      "contemplations": 4,
+      "participants": 72,
+      "dueDays": [
+        1
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1 por sorteio; 3 por lance livre",
+      "dilutedBidPercent": 20
+    },
+    {
+      "id": "honda-20260824-p4-m3-18",
+      "model": "M&M AVANÇADO",
+      "modelCode": "MM AVANC",
+      "family": "Motores & Máquinas",
+      "page": 4,
+      "creditCents": 312800,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 381616,
+      "installmentWithInsuranceCents": 21311,
+      "installmentWithoutInsuranceCents": 21201,
+      "excludedStates": [],
+      "months": 18,
+      "contemplations": 4,
+      "participants": 72,
+      "dueDays": [
+        1
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1 por sorteio; 3 por lance livre",
+      "dilutedBidPercent": 20
+    },
+    {
+      "id": "honda-20260824-p4-m4-18",
+      "model": "M&M AVANÇADO+",
+      "modelCode": "MM AVANC+",
+      "family": "Motores & Máquinas",
+      "page": 4,
+      "creditCents": 375300,
+      "documentationCents": 0,
+      "documentationPercent": 0,
+      "planWithoutInsuranceCents": 457866,
+      "installmentWithInsuranceCents": 25569,
+      "installmentWithoutInsuranceCents": 25437,
+      "excludedStates": [],
+      "months": 18,
+      "contemplations": 4,
+      "participants": 72,
+      "dueDays": [
+        1
+      ],
+      "adminPercent": 17,
+      "reservePercent": 5,
+      "insurancePercent": 0.5197,
+      "contemplationRule": "1 por sorteio; 3 por lance livre",
+      "dilutedBidPercent": 20
+    }
+  ]
+}

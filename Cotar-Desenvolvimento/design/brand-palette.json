@@ -1,0 +1,20 @@
+{
+  "name": "COTAR — matriz principal",
+  "reference": "Referência Nexus enviada em 30/09/2026",
+  "colors": {
+    "yellow": "#FAD23B",
+    "black": "#0E0E0E",
+    "onYellow": "#1E242A",
+    "yellowSoft": "#FFF8D6",
+    "surface": "#FFFFFF",
+    "canvas": "#E9EDF2",
+    "text": "#26313C",
+    "darkData": "#1A1A1A"
+  },
+  "rules": [
+    "Usar amarelo principal em todos os destaques de marca; evitar dourado e mostarda.",
+    "Manter branco e cinza no conteúdo corporativo.",
+    "Preservar cores semânticas de sucesso, erro e reparo.",
+    "Gráficos em cinza escuro e blocos escuros de indicadores usam #1A1A1A, com texto claro nos blocos."
+  ]
+}

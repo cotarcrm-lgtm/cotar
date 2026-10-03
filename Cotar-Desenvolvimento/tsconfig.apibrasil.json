@@ -1,0 +1,1 @@
+{"compilerOptions":{"allowJs":true,"checkJs":true,"noEmit":true,"strict":true,"target":"ES2022","module":"ESNext","moduleResolution":"Bundler","lib":["ES2022","DOM"],"skipLibCheck":true},"include":["server/apibrasil-client.js","server/apibrasil-types.d.ts"]}

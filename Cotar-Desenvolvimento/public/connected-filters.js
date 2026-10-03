@@ -1,0 +1,6 @@
+const bindings=new WeakMap(),options=new WeakMap();
+// Each field is faceted against every other filter; its own selection is excluded.
+export function connectFilters(root,config){let entry=bindings.get(root);if(!entry){entry={};bindings.set(root,entry);root.addEventListener('change',event=>{const c=entry.config;if(!c)return;const key=c.key(event.target);if(!key||!(key in c.state))return;c.state[key]=event.target.value;for(const input of root.querySelectorAll(c.selector)){const other=c.key(input);if(other===key||!c.state[other])continue;const valid=new Set(c.rows(other).flatMap(row=>[].concat(c.value(row,other)??'').map(String)));if(!valid.has(String(c.state[other]))){c.state[other]='';input.value='';}}},true);}entry.config=config;
+ for(const input of root.querySelectorAll(config.selector)){const key=config.key(input);if(!key)continue;if(!options.has(input))options.set(input,[...input.options].map(o=>o.cloneNode(true)));const valid=new Set(config.rows(key).flatMap(row=>[].concat(config.value(row,key)??'').map(String)));input.replaceChildren(...options.get(input).filter(o=>!o.value||valid.has(o.value)).map(o=>o.cloneNode(true)));input.value=config.state[key]||'';}
+}
+export function withoutFilter(state,key,fn){const old=state[key];state[key]='';try{return fn();}finally{state[key]=old;}}

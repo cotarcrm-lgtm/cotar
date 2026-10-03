@@ -1,0 +1,23 @@
+.story-dialog{width:min(460px,calc(100vw - 24px));max-height:92vh;overflow:auto;border:0;border-radius:18px;padding:0;box-shadow:0 24px 80px #0005;color:#24272b}.story-dialog::backdrop{background:#1119}.story-form{padding:26px;position:relative}.story-close{position:absolute;right:18px;top:15px;border:0;background:#f1f2f3;border-radius:50%;width:34px;height:34px;font-size:23px;cursor:pointer}.story-eyebrow{font-size:11px;font-weight:800;letter-spacing:.15em;color:#4b5660}.story-dialog h2{font-size:24px;margin:8px 0}.story-dialog p{font-size:13px;color:#697078}.story-fields{display:grid;gap:12px;margin:22px 0}.story-fields label{font-size:13px;font-weight:700}.story-fields input{display:block;box-sizing:border-box;width:100%;margin-top:6px;padding:12px;border:1px solid #d9dde0;border-radius:8px;font:inherit}.story-status{min-height:20px}.story-preview img{display:block;width:min(100%,260px);aspect-ratio:9/16;object-fit:contain;margin:14px auto;border:1px solid #eceef0;border-radius:9px}.story-actions{display:flex;gap:8px}.story-actions .btn{flex:1;text-align:center;text-decoration:none}.story-dialog .btn:disabled{opacity:.6}.story-card-button{background:#f5f5f2;border:1px solid #dedfe0;color:#292c30;border-radius:8px;padding:10px 12px;font-weight:700;cursor:pointer}.story-card-button:hover{background:#fad23b}
+.honda-card .story-card-button{display:block;width:100%;margin-top:9px;font-size:13px}.reserva-catalog-card .reserva-card-actions{flex-wrap:wrap;gap:8px}.reserva-catalog-card .story-card-button{font-size:12px;padding:9px 11px}.reserva-catalog-card .reserva-link-button{margin-left:auto!important}
+
+.honda-card .story-card-actions,.reserva-catalog-card .story-card-actions{display:flex;align-items:stretch;gap:8px;width:100%;min-width:0}
+.honda-card .story-card-actions{margin-top:17px}
+.honda-card .story-card-actions .honda-compare-button,.honda-card .story-card-actions .story-card-button{display:flex;align-items:center;justify-content:center;flex:1 1 0;min-width:0;width:auto;max-width:none;min-height:42px;margin:0;padding:8px 7px;font-size:12px;line-height:1.2;text-align:center}
+.reserva-catalog-card .story-card-actions{flex:1 1 auto}
+.reserva-catalog-card .story-card-actions .btn,.reserva-catalog-card .story-card-actions .story-card-button{flex:1 1 0;min-width:0;white-space:normal;padding:8px 6px;font-size:11px;line-height:1.2;text-align:center}
+.reserva-catalog-card .reserva-card-actions .reserva-link-button{flex:none;margin-left:0!important}
+@media(max-width:360px){.honda-card .story-card-actions .honda-compare-button,.honda-card .story-card-actions .story-card-button{font-size:11px}}
+
+.reserva-catalog-card .story-card-actions .btn,.reserva-catalog-card .story-card-actions .story-card-button{box-sizing:border-box;display:flex;align-items:center;justify-content:center;height:46px;min-height:46px;margin:0;line-height:1.15}
+
+.reserva-catalog-card .reserva-card-actions{flex-wrap:nowrap;align-items:stretch;gap:8px;width:100%}
+.reserva-catalog-card .story-card-actions{flex:1 1 0;width:auto;min-width:0}
+.reserva-catalog-card .reserva-card-actions .reserva-link-button{flex:0 0 46px;width:46px;height:46px;align-self:stretch;margin:0!important}
+.reserva-catalog-card .story-card-actions .btn,.reserva-catalog-card .story-card-actions .story-card-button{min-width:0;min-height:46px;white-space:normal}
+.reserva-bid-value{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.reserva-bid-value small{font-size:12px;font-weight:700;color:#4b5660}
+.reserva-key-line:has(.reserva-bid-value){display:block}
+.reserva-key-line:has(.reserva-bid-value)>span{display:block;margin-bottom:6px}
+.reserva-bid-value{display:flex;flex-direction:row;align-items:baseline;justify-content:space-between;gap:10px;width:100%;white-space:nowrap}
+.reserva-bid-value small{font-size:inherit;font-weight:inherit;color:inherit}

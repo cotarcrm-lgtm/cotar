@@ -1,0 +1,264 @@
+/* Shared finishing rules stay scoped to controls, not chart/card containers. */
+:root{--cotar-accent:#fad23b;--cotar-ink:#1a1a1a;--cotar-border:#dce1e6;--cotar-muted:#52606d}
+/* Authentication must win over desktop and collapsed sidebar layouts. */
+body.locked #main-sidebar,body.locked>.shell,body.locked>.menu-backdrop{display:none!important}
+.auth-foot a{color:#384552;text-decoration:none;font-weight:500;display:inline-block;padding:4px 0}
+.auth-foot a:hover{color:#1a1a1a;text-decoration:underline;text-underline-offset:3px}
+.auth-foot a:focus-visible{outline:2px solid #fad23b;outline-offset:4px;border-radius:3px}
+#app :is(.field label,.form-note,.used-hint,.used-client-fields label,.used-fields label,.used-feedback,.used-capture-feedback){font-size:13px;line-height:1.5;color:#52606d}
+#app :is(.record-secondary,.record-label,.compact-records td small){font-size:12px;line-height:1.55}
+#app :is(.btn,.uc-button){border-radius:8px;font-weight:600;line-height:1.3}
+#app :is(.used-client-document,.used-checklist-item,.used-query){min-width:0}
+#app :is(.used-upload,.used-media-upload,.used-client-document>a){overflow-wrap:anywhere}
+#app .used-checklist-item input,#app .used-checklist-item select{min-width:0;max-width:100%;box-sizing:border-box}
+#app .used-feedback:not(:empty),#app .used-capture-feedback:not(:empty){padding:10px 12px;border:1px solid #dce1e6;border-radius:8px;background:#f5f7f9}
+#app .stock-publication{display:block;margin-top:8px;font-size:12px;line-height:1.5;color:#6a5660}
+#app .stock-publication.is-ready{color:#287449}
+#app .used-stage-progress progress{accent-color:#fad23b}
+#app .used-stage-pending{padding:10px 14px;border:1px solid #dce1e6;border-radius:8px;background:#f7f8fa;color:#52606d;font-size:13px;line-height:1.6;margin:12px 0 18px}
+.uc-payment-comparison .uc-footnote{font-size:12px!important;color:#52606d;line-height:1.6!important}
+.uc-shell label,.uc-dialog label{font-size:12px;line-height:1.45}
+.uc-upload small,.uc-consent,.uc-proposals-table td span{font-size:12px}
+.uc-finance-numbers strong,.uc-consortium-numbers strong{font-variant-numeric:tabular-nums}
+button[aria-busy=true]{cursor:progress}
+@media(max-width:700px){
+  #app :is(.btn,.record-menu-trigger,.record-menu-item,.stock-menu-trigger,.capture-action-trigger,.internal-filter-toggle,.dashboard-mobile-filter-button,.chat-back,#chat-send,.chat-attach){min-height:44px}
+  #app :is(.record-menu-trigger,.stock-menu-trigger,.capture-action-trigger,.chat-back){min-width:44px}
+  #app :is(.used-actions,.actions,.capture-dialog-head){gap:10px;flex-wrap:wrap}
+  #app .used-actions>.btn{flex:1 1 145px}
+  #app .used-checklist-row{min-width:0;gap:8px}
+  #app .used-stage-nav{display:flex;overflow-x:auto;gap:6px;scrollbar-width:thin;padding-bottom:5px}
+  #app .used-stage-nav button{flex:0 0 auto;min-height:44px;white-space:nowrap}
+  #app .lead-calendar{overflow-x:auto}
+  #app :is(.calendar-toolbar,.calendar-heading){flex-wrap:wrap;gap:10px}
+  #app .day-agenda{padding:14px}
+  #app .chat-workspace{min-height:320px;height:calc(100dvh - 175px)}
+  #app #chat-compose{padding-bottom:max(12px,env(safe-area-inset-bottom));flex-shrink:0}
+  #app .chat-compose-actions{flex-wrap:wrap;align-items:center}
+  #app .chat-thread-time{font-size:12px}
+  #app :is(.used-client-fields,.used-owner-fields){grid-template-columns:1fr}
+  #app .compact-record-wrap{overflow-x:auto;overscroll-behavior-x:contain}
+  .uc-dialog .uc-footnote{font-size:12px!important}
+}
+
+/* Login: primary access, account recovery and support have distinct positions. */
+#auth-root .auth-card{margin-bottom:0;padding:36px 38px 28px}
+#auth-root .auth-password{display:grid;gap:8px;min-width:0}
+#auth-root .auth-password-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#auth-root .auth-password-heading label{margin:0}
+#auth-root .auth-password-heading a{font-size:14px;font-weight:600;color:#52616f;text-decoration:none;line-height:1.5}
+#auth-root .auth-password input{width:100%;min-width:0}
+#auth-root #login-error:empty{display:none}
+#auth-root #login-form>.btn{margin-top:7px;min-height:50px;font-size:15px;font-weight:700}
+#auth-root .auth-signup{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 7px;margin:22px 0 24px;font-size:14px;line-height:1.6;color:#647180}
+#auth-root .auth-signup a{font-weight:650;color:#26323c;text-decoration:none}
+#auth-root .auth-support{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0 0;border-top:1px solid #e8ecef}
+#auth-root .auth-support-copy{display:flex;align-items:center;gap:12px;min-width:0}
+#auth-root .auth-support-copy svg{width:23px;height:23px;flex-shrink:0;color:#71808e}
+#auth-root .auth-support-copy strong{display:block;font-size:14px;font-weight:650;color:#34424e;line-height:1.5}
+#auth-root .auth-support-copy span{display:block;font-size:13px;color:#72808d;line-height:1.5;margin-top:2px}
+#auth-root .auth-support-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 18px;border:1px solid #dce2e7;border-radius:8px;color:#34424e;background:#fff;text-decoration:none;font-size:14px;font-weight:650;flex-shrink:0;transition:background .15s,border-color .15s}
+#auth-root .auth-support-button:hover{background:#f5f7f9;border-color:#aebac4}
+#auth-root .auth-secondary-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 18px;padding:22px 16px 30px;font-size:14px;line-height:1.5;color:#727b83}
+#auth-root .auth-secondary-links a{color:#adb5be;text-decoration:none;padding:4px 0}
+#auth-root .auth-secondary-links a:hover{color:#fff}
+#auth-root :is(.auth-password-heading,.auth-signup) a:hover{text-decoration:underline;text-underline-offset:4px}
+#auth-root a:focus-visible{outline:2px solid #fad23b;outline-offset:4px;border-radius:3px}
+@media(max-width:480px){#auth-root .auth-card{padding:28px 24px 24px}#auth-root .auth-support{gap:10px}#auth-root .auth-support-copy{gap:9px}#auth-root .auth-support-button{padding:9px 14px}#auth-root .auth-secondary-links{gap:10px 12px}}
+
+/* Keep support anchored below the scrolling navigation. */
+body #main-sidebar{display:flex;flex-direction:column;overflow:hidden}
+body #main-sidebar #navigation{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;padding-bottom:0}
+body #main-sidebar #navigation .nav-support{margin-top:auto;position:sticky;bottom:0;background:#000;border-top:1px solid #333;padding-top:16px;padding-bottom:16px;flex-shrink:0;z-index:2}
+.support-media{display:grid;gap:10px;margin:10px 0}.support-media img,.support-media video{display:block;max-width:100%;width:auto;max-height:280px;border-radius:8px}.support-media a{overflow-wrap:anywhere;font-size:14px}.support-selected-files{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.support-selected-files button{border:1px solid #ddd;border-radius:6px;background:#fff;padding:8px;max-width:100%;overflow-wrap:anywhere}.support-attachment-picker{display:inline-flex;gap:8px;align-items:center;cursor:pointer;font-size:14px}.support-attachment-picker input{width:auto;max-width:240px}.support-file-hint{font-size:12px;color:#69717c;margin:6px 0}
+
+body #main-sidebar #navigation{overflow:hidden}#navigation>.nav-links{flex:1;min-height:0;overflow-y:auto}body #main-sidebar #navigation .nav-support{position:static;margin-top:12px}.sidebar-collapsed #navigation>.nav-links{overflow-x:hidden}
+
+#app label.support-attachment-picker{display:inline-flex;margin:4px 0;align-self:flex-start}#app .support-selected-files{margin:8px 0}#app .support-selected-files .chat-file-chip>button{border:0;padding:0;background:transparent;width:30px;height:30px;flex:none;font-size:20px}#app .support-selected-files .chat-file-chip>button:hover{background:#fbecec;color:#ad4848}
+
+.excel-export{display:inline-flex;align-items:center;justify-content:center;gap:7px;align-self:end;min-height:38px;padding:8px 12px;border:1px solid #dce1e6;border-radius:8px;background:#fff;color:#52606d;font-family:inherit;font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer}.excel-export svg{width:16px;height:16px;flex-shrink:0}.excel-export:hover{background:#f5f7f9;color:#1a1a1a;border-color:#b9c3cd}.excel-export:focus-visible{outline:2px solid #fad23b;outline-offset:2px}.excel-export:disabled{opacity:.55;cursor:wait}
+
+#app .excel-export{width:max-content!important;min-width:0!important;max-width:100%;flex:0 0 auto;justify-self:end;padding-left:10px;padding-right:10px}
+
+#app .exec-table-wrap tr.exec-podium-1>td{background:#fad23b;color:#1a1a1a}#app .exec-table-wrap tr.exec-podium-2>td{background:#e3e5e8;color:#1a1a1a}#app .exec-table-wrap tr.exec-podium-3>td{background:#e5c3a4;color:#1a1a1a}
+.honda-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.honda-filters label{display:grid;gap:7px;min-width:0}.honda-filters input,.honda-filters select{width:100%;min-width:0}.honda-trend-legend{display:flex;gap:20px;margin:14px 0;color:#52606d;font-size:13px}.honda-trend-legend span:before{content:'';display:inline-block;width:10px;height:10px;margin-right:7px;background:#fad23b;border-radius:2px}.honda-trend-legend span+span:before{background:#29313a}.honda-months{display:flex;gap:24px;overflow-x:auto;padding:30px 10px 16px}.honda-month{flex:1;min-width:120px;text-align:center;color:#52606d;font-size:13px}.honda-month-bars{display:flex;align-items:end;justify-content:center;gap:18px;height:185px;margin-bottom:12px;border-bottom:1px solid #e0e5e9}.honda-month-bars>div{display:flex;flex-direction:column;align-items:center;gap:9px}.honda-month-bars strong{font-size:12px;white-space:nowrap}.honda-month-bars i{display:block;width:24px;border-radius:4px 4px 0 0}@media(max-width:760px){.honda-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.honda-evolution{grid-column:auto}.honda-evolution .honda-months{gap:16px;padding-left:0;padding-right:0}.honda-evolution .honda-month{min-width:52px}.honda-evolution .honda-month-bars i{width:36px}.honda-evolution .honda-month-bars{gap:0}@media(max-width:760px){.honda-evolution{grid-column:1/-1}}
+
+.honda-evolution .honda-months{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;overflow:visible;padding-bottom:64px}.honda-evolution .honda-month{min-width:0;position:relative}.honda-evolution .honda-month-bars i{width:clamp(12px,2vw,36px);max-width:100%}.honda-evolution .honda-month>span{position:absolute;top:100%;left:50%;transform:translateX(-50%) rotate(-55deg);transform-origin:center;white-space:nowrap;font-size:11px}.honda-evolution .honda-month-bars strong{font-size:11px}
+
+.honda-evolution .honda-month>span{transform:translateX(-50%)}.honda-evolution .honda-months{padding-bottom:28px}
+
+.honda-donut-layout{display:flex;align-items:center;gap:24px;padding:24px 0}.honda-donut{width:190px;height:190px;flex-shrink:0;border-radius:50%;display:grid;place-items:center}.honda-donut>div{width:126px;height:126px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}.honda-donut strong{font-size:28px}.honda-donut span{font-size:12px;color:#71808f}.honda-donut-legend{list-style:none;padding:0;margin:0;flex:1;min-width:0;display:grid;gap:12px}.honda-donut-legend li{display:grid;grid-template-columns:10px minmax(0,1fr) auto auto;gap:8px;align-items:center;font-size:12px}.honda-donut-legend i{width:9px;height:9px;border-radius:50%}.honda-donut-legend span{overflow-wrap:anywhere;color:#52606d}.honda-donut-legend small{color:#71808f;min-width:42px;text-align:right}@media(max-width:1100px){.honda-donut-layout{flex-direction:column}.honda-donut-legend{width:100%}}
+
+#app .exec-ranking [data-honda-extra][hidden]{display:none}#app .exec-ranking td,#app .exec-ranking th{padding:7px 12px;font-size:12px;line-height:1.35}.honda-ranking-expand{display:block;margin:14px auto 0;padding:7px 12px;border:1px solid #dce1e6;border-radius:7px;background:#fff;color:#52606d;font:inherit;font-size:12px;cursor:pointer}.honda-ranking-expand:hover{background:#f5f7f9}
+
+.honda-ranking-credit{display:block;font-size:10px;font-weight:400;color:#71808f;margin-top:3px;white-space:nowrap}
+
+.honda-donut-chart{display:block;width:100%;height:auto;margin:12px 0}#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}@media(max-width:760px){#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:1fr}}
+
+.honda-donut-chart{height:280px;width:100%;margin:12px 0}
+
+#app .honda-ranking .exec-table-wrap{background:transparent;padding:0;border-radius:0;max-height:280px;overflow:auto;scrollbar-width:thin}#app .honda-ranking table{border-collapse:collapse;border-spacing:0;table-layout:fixed}#app .honda-ranking table :is(th,td),#app .honda-ranking table tbody td{padding:4px 8px;font-size:11px;line-height:1.2;border:0;border-bottom:1px solid #edf0f3;border-radius:0;background:transparent}#app .honda-ranking table th{position:sticky;top:0;background:#fff;z-index:1;font-size:10px}#app .honda-ranking table :is(th,td):first-child{width:30px;border-left:0;border-radius:0}#app .honda-ranking table :is(th,td):last-child{width:105px;border-right:0;border-radius:0}#app .honda-ranking table td:nth-child(2){white-space:normal;overflow-wrap:break-word}#app .honda-ranking table td strong{font-weight:500}.honda-ranking .honda-ranking-credit{font-size:9px;line-height:1.1;margin-top:2px}.honda-ranking .honda-ranking-expand{margin-top:10px;font-size:11px;padding:5px 10px}
+
+#app .honda-ranking.is-expanded .exec-table-wrap{max-height:none}
+
+#app .honda-ranking table tbody td{padding:5px 8px!important;font-size:11px!important;line-height:1.15!important;border-radius:0!important;border-left:0!important;border-right:0!important}#app .honda-ranking table tbody td strong{font-size:11px!important;font-weight:500!important}#app .honda-ranking table th{padding:6px 8px!important;font-size:10px!important}#app .honda-ranking .honda-ranking-credit{font-size:9px!important;color:#697582!important}.honda-seller-bar{display:block;height:2px;background:#eef0f2;border-radius:2px;margin-top:5px;max-width:90%}.honda-seller-bar b{display:block;height:2px;background:#89939c;border-radius:2px}#app .honda-ranking tr.exec-podium-1>td{background:#fff5cc!important}#app .honda-ranking tr.exec-podium-2>td{background:#f0f1f3!important}#app .honda-ranking tr.exec-podium-3>td{background:#f7e9dc!important}#app .honda-ranking tr.exec-podium-1 .honda-seller-bar b{background:#d8ad20}#app .honda-ranking tr.exec-podium-3 .honda-seller-bar b{background:#ba8b62}
+
+#app .executive-dashboard:has(.honda-evolution) .exec-panel>header{padding:0 28px 8px 0!important;margin:0 0 10px!important;min-height:26px!important;gap:8px;flex-wrap:nowrap}#app .executive-dashboard:has(.honda-evolution) .exec-panel>header h2{font-size:12px!important;margin:0!important;line-height:1.3}#app .executive-dashboard:has(.honda-evolution) .exec-panel>header>span{font-size:10px;padding:3px 5px;white-space:nowrap}#app .executive-dashboard:has(.honda-evolution) .exec-panel>header .chart-download{width:24px;height:24px;padding:4px;top:0}#app .executive-dashboard:has(.honda-evolution) .chart-download svg{width:15px;height:15px}
+
+#app .exec-panel>header{height:auto!important;min-height:24px!important;max-height:none!important;padding:0 28px 7px 0!important;margin:0 0 10px!important;display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:8px!important;background:transparent!important}#app .exec-panel>header h2{font-size:12px!important;line-height:1.3!important;margin:0!important}#app .exec-panel>header>span{font-size:10px!important;padding:2px 5px!important;white-space:nowrap}#app .exec-panel>header .chart-download{width:24px!important;height:24px!important;padding:4px!important;top:0!important}#app .exec-panel>header .chart-download svg{width:15px!important;height:15px!important}
+
+#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:repeat(6,minmax(0,1fr))}#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel{grid-column:span 2;min-width:0}#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(n+4){grid-column:span 3}#app .executive-dashboard:has(.honda-evolution) .exec-panel>header>span{display:none}#app .honda-evolution .honda-month-bars i{width:18px}#app .honda-evolution .honda-month>span{font-size:10px}@media(max-width:1000px){#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:1fr}#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel{grid-column:1!important}}
+
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.honda-city-panel{grid-column:1/-1}.honda-city-layout{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}.honda-city-note{font-size:11px;color:#71808f}.honda-city-map svg{width:100%;max-height:400px}.honda-city-map small{display:block;font-size:10px;color:#71808f;line-height:1.5}.honda-city-list{max-height:420px;overflow:auto;scrollbar-width:thin}.honda-city-list>div{display:grid;grid-template-columns:1fr auto 48px;gap:12px;padding:8px 0;border-bottom:1px solid #edf0f3;font-size:11px}.honda-city-list small{text-align:right;color:#71808f}.honda-city-scale{display:flex;align-items:center;justify-content:center;gap:10px;font-size:10px;color:#71808f;margin:8px 0}.honda-city-scale i{width:130px;height:5px;background:linear-gradient(90deg,#fff5cf,#edb51c);border-radius:3px}@media(max-width:760px){.honda-city-layout{grid-template-columns:1fr}}
+
+.honda-city-layout{display:block}.honda-city-map svg{display:block;height:480px;max-height:none;margin:0 auto;max-width:850px}.honda-city-map circle:hover,.honda-city-map circle:focus{fill-opacity:1;stroke:#292929;stroke-width:1.5}
+
+#app .dashboard-filters.honda-filters{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));padding:16px;background:#fff;border:1px solid #e4e8ed;border-radius:10px;gap:12px}#app .honda-filters label{font-size:11px;color:#647180;gap:5px}#app .honda-filters :is(input,select){height:36px;font-size:12px;padding:7px 9px;border:1px solid #dce1e6;border-radius:7px;background:#fff}@media(max-width:1100px){#app .honda-filters{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){#app .honda-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(n+4){grid-column:span 2}
+@media(max-width:1000px){#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(n+4){grid-column:1}}
+
+/* Compact rankings leave half of the second row for the city map. */
+#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:start}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel{grid-column:span 4}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(n+4){grid-column:span 3}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.honda-city-panel{grid-column:span 6}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:is(:nth-child(4),:nth-child(5)){min-height:380px;padding:16px}
+#app .honda-ranking table :is(th,td):last-child{width:92px}
+#app .honda-city-map svg{height:auto;aspect-ratio:700/480;max-height:480px;width:100%}
+@media(max-width:1000px){#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:1fr}#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel{grid-column:1!important}}
+
+#app .dashboard-filters.honda-filters.honda-filters-collapsed{display:none!important}
+#app .honda-filters .excel-export{width:auto!important;min-width:0!important;justify-self:end;align-self:end;padding:6px 9px!important;height:32px;font-size:11px}
+.honda-range{position:relative;min-width:0}.honda-range summary{list-style:none;cursor:pointer;font-size:11px;white-space:nowrap}.honda-range-popover{position:absolute;top:42px;left:0;z-index:30;background:#fff;box-shadow:0 8px 28px #0002;border:1px solid #e0e4e8;border-radius:10px;padding:14px;width:280px;display:grid;gap:12px}
+
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(n+4){height:480px;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel.honda-city-panel:nth-child(6){grid-column:span 6}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(4)>:last-child{overflow:auto;min-height:0;scrollbar-width:thin}
+#app .honda-ranking .exec-table-wrap{flex:1;min-height:0;max-height:none}
+#app .honda-ranking .honda-ranking-expand{flex-shrink:0;align-self:center}
+#app .honda-city-panel>[data-honda-city-map]{flex:1;min-height:0;display:flex;flex-direction:column}
+#app .honda-city-panel .honda-city-layout{flex:1;min-height:0}
+#app .honda-city-panel .honda-city-map{height:100%;display:flex;flex-direction:column}
+#app .honda-city-panel .honda-city-map svg{flex:1;min-height:0;height:100%;max-height:none;width:100%;max-width:none;aspect-ratio:auto}
+#app .honda-city-panel .honda-city-note{margin:0 0 8px;font-size:10px;line-height:1.4}
+#app .honda-ranking.is-expanded{height:auto!important;overflow:visible!important}
+@media(max-width:1000px){#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel.honda-city-panel:nth-child(6){grid-column:1}}
+
+#app .honda-ranking table tbody tr>td{background:transparent!important}
+#app .honda-ranking .honda-seller-bar{height:4px;background:#eef0f2;max-width:100%;border-radius:3px;margin-top:6px}
+#app .honda-ranking .honda-seller-bar b{height:4px;background:#fad23b!important;border-radius:3px}
+
+#company-access-selector{height:32px;max-width:190px;min-width:110px;font-size:11px;border:1px solid #dce1e6;border-radius:7px;padding:4px 8px;background:#fff;color:#30363b}@media(max-width:700px){#company-access-selector{max-width:125px;font-size:10px}}
+
+/* Keep operational status internal and the account header compact. */
+#company-access-selector,#connection{display:none!important}
+
+.honda-heading-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.honda-heading-actions .btn{font-size:11px;padding:7px 10px;min-height:32px}.honda-heading-actions small{flex-basis:100%;font-size:11px;color:#697582;text-align:right}
+
+.honda-tabs{display:flex;gap:20px;border-bottom:1px solid #e6e9ed;margin:0 0 16px}.honda-tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 2px;font-size:13px;color:#78828d;cursor:pointer}.honda-tabs button[aria-pressed=true]{color:#20252a;border-bottom-color:#efc526;font-weight:600}.honda-quality-controls{display:flex;align-items:center;gap:16px;margin:16px 0}.honda-quality-controls label{display:grid;gap:5px;font-size:12px}.honda-quality-controls input,.honda-quality-controls select{width:120px;padding:8px;border:1px solid #dde2e7;border-radius:6px;background:white}.honda-quality-controls>span{font-size:12px;color:#687581;max-width:520px}.honda-quality .exec-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.honda-quality .exec-kpi small{font-size:12px;color:#687581}.honda-quality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.honda-quality-panel:last-child{grid-column:1/-1;max-width:calc(50% - 8px);width:100%}.honda-quality-panel svg{width:100%;display:block}.honda-quality-rule,.honda-quality-pending,.honda-quality-note{font-size:12px;color:#52606d;line-height:1.6}.honda-quality-panel>small{font-size:11px;color:#77818b}.honda-quality-note{padding:12px 0}.honda-quality-panel header span{margin-left:auto}@media(max-width:850px){.honda-quality-grid,.honda-quality .exec-kpis{grid-template-columns:1fr}.honda-quality-panel:last-child{max-width:none}.honda-quality-controls{flex-wrap:wrap}}
+
+.honda-summary-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:stretch}.honda-summary-cards .exec-kpi{display:flex;flex-direction:column;gap:8px}.honda-summary-cards strong{font-size:24px!important}.honda-summary-cards em{font-size:11px;font-style:normal;font-weight:400;color:#71808f}.honda-card-detail{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:#52606d}.honda-card-detail b{font-weight:600;color:#29313a}.honda-summary-cards small{font-size:11px;color:#71808f;line-height:1.5}.honda-premium-card{border-top:2px solid #f2c62e!important}@media(max-width:1000px){.honda-summary-cards{grid-template-columns:1fr!important}}
+
+.honda-summary-cards{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important}.honda-summary-cards .exec-kpi{padding:12px!important;gap:5px;min-width:0}.honda-summary-cards .exec-kpi>span{font-size:11px}.honda-summary-cards strong{font-size:19px!important;line-height:1.3;overflow-wrap:anywhere}.honda-summary-cards .honda-card-detail{font-size:11px;gap:4px}.honda-summary-cards .honda-card-detail>span{display:block;width:100%}.honda-summary-cards .honda-card-detail>b{display:block}.honda-summary-cards small{font-size:10px}@media(max-width:1200px){.honda-summary-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(max-width:650px){.honda-summary-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(max-width:420px){.honda-summary-cards{grid-template-columns:1fr!important}}
+
+#app .honda-premium-value{display:flex;flex-direction:column;gap:2px;margin:8px 0 4px}#app .honda-premium-value>strong{display:block;margin:0;font-weight:700;padding-right:22px}#app .honda-premium-value>small{margin:0;line-height:1.3}
+
+.honda-stacked-trend{display:block;width:100%;height:auto;margin-top:24px}.honda-evolution .honda-trend-legend{font-size:11px;gap:16px}
+
+@media(min-width:1001px){
+#app .executive-dashboard:has(.honda-evolution) .exec-grid{grid-template-columns:repeat(20,minmax(0,1fr));align-items:stretch}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:first-child{grid-column:span 8;height:380px;display:flex;flex-direction:column}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(2),#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(3){grid-column:span 6;height:380px;display:flex;flex-direction:column}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(4),#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(5){grid-column:span 5}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(6){grid-column:span 10}
+#app .honda-evolution .honda-trend{flex:1;min-height:0;display:flex;flex-direction:column}
+#app .honda-evolution .honda-stacked-trend{flex:1;min-height:0;height:100%;margin-top:4px}
+#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel:nth-child(-n+3) .honda-donut-chart{flex:1;min-height:0;width:100%;height:100%;margin:10px 0 0}
+}
+
+@media(min-width:1001px){#app .executive-dashboard:has(.honda-evolution) .exec-grid>.exec-panel.honda-city-panel:nth-child(6){grid-column:span 10;width:100%}}
+
+#app .honda-city-readable{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr) minmax(0,1fr);gap:14px;flex:1;min-height:0;align-items:stretch}
+#app .honda-city-labels{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;overflow-y:auto;scrollbar-width:thin}
+#app .honda-city-labels li{display:flex;flex-direction:column;gap:3px;line-height:1.4}
+#app .honda-city-labels strong{font-size:12px;font-weight:500;color:#29313a;overflow-wrap:anywhere}
+#app .honda-city-labels span{font-size:11px;color:#52606d}
+#app .honda-city-readable>svg{align-self:center;max-height:100%;width:100%;height:100%}
+@media(max-width:650px){#app .honda-city-readable{grid-template-columns:1fr 1fr;overflow:visible}#app .honda-city-readable>svg{grid-column:1/-1;grid-row:1;height:280px!important}#app .honda-city-labels{max-height:350px}}
+
+.honda-premium-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}#app .honda-premium-heading input[type="month"]{box-sizing:border-box;flex:0 0 108px;width:108px;max-width:108px;min-width:0;min-height:22px;height:22px;margin:0;padding:1px 3px;border:1px solid #e1e5e9;border-radius:5px;background:#fff;color:#47515b;font-family:inherit;font-size:10px;line-height:18px;}
+.honda-draw-result,.honda-draw-controls{padding:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.honda-draw-result h2{font-size:15px;margin:0 0 3px}.honda-draw-result>div:first-child{flex:1}.honda-draw-prizes{display:flex;gap:8px;flex-basis:100%;flex-wrap:wrap}.honda-draw-prizes button{display:grid;gap:4px;padding:8px 14px;border:1px solid #e4e7ea;border-radius:6px;background:#fafafa;color:#39424c}.honda-draw-prizes button[aria-pressed=true]{background:#fff5cb;border-color:#e8c340}.honda-draw-prizes strong{font-size:17px}.honda-draw-controls label{font-size:11px;display:grid;gap:4px}.honda-draw-controls select,.honda-draw-controls input{width:170px}.honda-draw-controls span,.honda-draw-note{font-size:11px;color:#76808a}.honda-draw-note{padding:0 14px;line-height:1.5}.honda-draw td{padding:7px 10px;font-size:12px}.honda-draw td small{display:block;font-size:10px;color:#7a838c;margin-top:3px}.honda-draw td a{color:inherit}
+.honda-draw-reference{padding:12px 14px}.honda-draw-reference h2{font-size:13px;margin:0 0 10px}.honda-draw-reference>div{display:flex;gap:10px;flex-wrap:wrap}.honda-draw-reference span{display:grid;gap:4px;background:#f7f8f9;border-radius:5px;padding:8px 14px;font-size:12px}.honda-draw-reference small{font-size:10px;color:#76808a}.honda-draw-reference b{font-size:13px}
+
+.honda-draw-reference label{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:11px}.honda-draw-reference select{width:180px;padding:5px;font-size:12px}
+
+.honda-draw-condition{display:inline-block;padding:3px 6px;border-radius:4px;background:#f1f3f5;font-size:11px;white-space:nowrap}.honda-draw-exact .honda-draw-condition{background:#f3d45c;font-weight:600}.honda-draw-near .honda-draw-condition{background:#fff1b8}
+
+#app .honda-draw table{border-collapse:collapse;border-spacing:0;width:100%}#app .honda-draw table :is(th,td){text-align:left!important;padding:9px 12px!important;vertical-align:middle;border-right:1px solid #e7eaee;border-bottom:1px solid #e7eaee;border-radius:0!important}#app .honda-draw table :is(th,td):last-child{border-right:0}#app .honda-draw table tbody tr,#app .honda-draw table tbody td{background:#fff!important}#app .honda-draw table th{font-size:10px;white-space:nowrap}#app .honda-draw .honda-draw-whatsapp{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;text-decoration:none}#app .honda-draw .honda-draw-whatsapp svg{width:17px;height:17px;flex:0 0 17px;color:#23965a}#app .honda-draw .honda-draw-whatsapp:hover span{text-decoration:underline}
+
+#app .honda-draw-controls .honda-draw-summary{font-size:13px;line-height:1.5;color:#48535f}#app .honda-draw-summary b{font-weight:700;color:#28313b}
+
+#app .honda-draw-condition{box-sizing:border-box;min-width:64px;text-align:center}#app .honda-draw-exact .honda-draw-condition{background:#23965a;color:#fff;font-weight:600}#app .honda-draw-near .honda-draw-condition{background:#f4cd28;color:#000;font-weight:500}
+
+.honda-overview-cards .exec-kpi{min-height:155px}.honda-overview-detail{display:flex;flex-direction:column;gap:1px;font-size:10px;color:#71808f;line-height:1.5}.honda-overview-detail b{font-size:11px;font-weight:500;color:#29313a;overflow-wrap:anywhere}.honda-overview-cards .honda-top-model{font-size:14px!important}.honda-overview-cards .honda-population-source{font-size:9px;color:#71808f;margin-top:auto;text-decoration:none}.honda-insurance-content{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.honda-insurance-donut{width:66px;height:66px;flex-shrink:0;border-radius:50%;background:conic-gradient(#30343a var(--insurance-share),#e2e5e8 0);display:grid;place-items:center;position:relative}.honda-insurance-donut:before{content:"";position:absolute;inset:9px;border-radius:50%;background:#fff}.honda-insurance-donut>span{position:relative;font-size:12px;font-weight:600;color:#29313a}.honda-insurance-content>div:last-child{display:grid;gap:6px}
+
+#app .honda-overview-cards{gap:12px!important;margin-bottom:16px}#app .honda-overview-cards .exec-kpi{padding:14px!important;border:1px solid #e3e7eb;border-radius:10px;box-shadow:none;min-height:170px;gap:7px;background:#fff}#app .honda-overview-cards .exec-kpi>span{font-size:11px;line-height:1.4;color:#687581;font-weight:500;min-height:30px}#app .honda-overview-cards .exec-kpi>strong{font-size:22px!important;line-height:1.25;margin:0 0 5px;color:#29313a;letter-spacing:-.35px}#app .honda-overview-cards .exec-kpi>strong em{font-size:10px;letter-spacing:0;display:block;margin-top:3px}#app .honda-overview-cards .honda-overview-detail{gap:2px;line-height:1.4}#app .honda-overview-cards .honda-overview-detail b{font-size:11px;font-weight:500}#app .honda-overview-cards .honda-top-model{font-size:15px!important;letter-spacing:0;min-height:32px}#app .honda-overview-cards .honda-insurance-content{margin-top:3px;gap:10px}#app .honda-overview-cards .honda-population-source{line-height:1.4;padding-top:5px}#app .honda-overview-cards .exec-kpi>small{color:#89929b;font-size:10px}
+
+#app .honda-quality-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}#app .honda-quality-panel:last-child{grid-column:auto;max-width:none}#app .honda-quality-panel{min-width:0;display:flex;flex-direction:column}#app .honda-quality-panel header{gap:6px}#app .honda-quality-panel header span{font-size:9px;white-space:nowrap}#app .honda-quality-panel .honda-quality-rule{font-size:10px;line-height:1.5;min-height:30px;margin:10px 0 4px}#app .honda-quality-panel svg{margin-top:auto}#app [data-quality-detail]{cursor:pointer}#app [data-quality-detail]:focus-visible{outline:2px solid #e3b60a;outline-offset:2px}#app .honda-quality .exec-kpi{border-top:2px solid #f4cd28}#app .honda-quality-rankings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}#app .honda-quality-ranking{min-width:0}#app .honda-quality-ranking-control{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:16px 0 10px;font-size:11px;color:#77818b}#app .honda-quality-ranking-control select{margin-left:6px;padding:6px;border:1px solid #dde2e7;border-radius:6px;background:#fff;font-size:11px;color:#29313a}#app .honda-quality-ranking th,#app .honda-quality-ranking td{padding:7px 9px;font-size:11px}#app .honda-quality-ranking th small{display:block;font-weight:400;font-size:9px;color:#89929b}#app .honda-quality-ranking td:nth-child(2){min-width:120px}#app .honda-quality-ranking td:nth-child(2) strong{font-size:11px}#app .honda-quality-ranking .honda-seller-bar{height:3px;margin-top:4px}#app .quality-metric-button{padding:0;border:0;background:transparent;color:#29313a;font-size:11px;font-weight:600;text-align:left;cursor:pointer}#app .quality-metric-button:hover{color:#8b6c00}#app .quality-metric-button small{display:block;font-size:9px;color:#89929b;font-weight:400;margin-top:2px}.honda-quality-dialog{width:min(1050px,94vw);max-height:85vh;padding:0;border:1px solid #e3e7eb;border-radius:12px;color:#29313a}.honda-quality-dialog::backdrop{background:rgba(20,25,30,.4)}.honda-quality-dialog .dialog-head{padding:16px 20px;border-bottom:1px solid #e6e9ed}.honda-quality-dialog h2{font-size:16px}.honda-quality-dialog .sub{font-size:11px}.honda-quality-dialog-body{padding:14px 20px}.honda-quality-detail-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.honda-quality-detail-tabs button{padding:7px 10px;border:1px solid #e4e8eb;border-radius:6px;background:#fff;font-size:11px;color:#52606d;cursor:pointer}.honda-quality-detail-tabs button[aria-pressed=true]{background:#fff6cf;border-color:#f4cd28;color:#29313a}.honda-quality-detail-search{display:grid;gap:5px;margin:10px 0;font-size:11px;color:#77818b}.honda-quality-detail-search input{padding:8px 10px;border:1px solid #dde2e7;border-radius:6px;font-size:12px}.honda-quality-detail-warning{padding:9px 11px;background:#fff8dc;border-radius:6px;font-size:11px;line-height:1.5;color:#736026}.honda-quality-dialog table{width:100%;border-collapse:collapse}.honda-quality-dialog th,.honda-quality-dialog td{text-align:left;padding:9px 10px;border-bottom:1px solid #edf0f2;font-size:11px}.honda-quality-dialog th{color:#77818b;font-weight:500}.honda-quality-dialog td small{display:block;color:#89929b;font-size:10px;margin-top:3px}#app .honda-overview-cards .exec-kpi:nth-child(1)>span:before,#app .honda-overview-cards .exec-kpi:nth-child(3)>span:before,#app .honda-overview-cards .exec-kpi:nth-child(6)>span:before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#f4cd28;margin-right:5px;vertical-align:middle}#app .honda-overview-cards .honda-insurance-donut{background:conic-gradient(#f4cd28 var(--insurance-share),#e2e5e8 0)}@media(max-width:1050px){#app .honda-quality-grid{grid-template-columns:1fr}#app .honda-quality-panel svg{max-height:280px}#app .honda-quality-rankings{grid-template-columns:1fr}}@media(max-width:650px){#app .honda-quality-ranking-control{flex-wrap:wrap}}
+
+#app .honda-quality-ranking .exec-table-wrap,#app .honda-quality-ranking table,#app .honda-quality-ranking thead,#app .honda-quality-ranking tbody,#app .honda-quality-ranking tr,#app .honda-quality-ranking th,#app .honda-quality-ranking td{background:#fff!important}#app .honda-quality-ranking .exec-table-wrap{border:1px solid #e6e9ed;border-radius:7px;overflow:auto}#app .honda-quality-ranking table{border-collapse:collapse;margin:0;width:100%}#app .honda-quality-ranking th,#app .honda-quality-ranking td{border-bottom:1px solid #e6e9ed;border-right:1px solid #e6e9ed;text-align:left;vertical-align:middle}#app .honda-quality-ranking th:last-child,#app .honda-quality-ranking td:last-child{border-right:0}#app .honda-quality-ranking tbody tr:last-child td{border-bottom:0}
+
+#app .honda-quality .honda-quality-cards{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;align-items:stretch}#app .honda-quality-cards .exec-kpi{padding:13px;min-width:0;min-height:112px;border:1px solid #e3e7eb;border-top:2px solid #f4cd28;border-radius:10px;box-shadow:none;background:#fff;display:flex;flex-direction:column;gap:6px}#app .honda-quality-cards .exec-kpi>span{font-size:11px;color:#687581;line-height:1.4}#app .honda-quality-cards .exec-kpi>strong{font-size:21px;line-height:1.25;letter-spacing:-.3px;color:#29313a}#app .honda-quality-cards .exec-kpi>small{font-size:10px;line-height:1.4;color:#89929b}#app .honda-quality-cards .honda-premium-eligibility{width:fit-content;padding:3px 7px;border-radius:4px;background:#f1f3f5;color:#52606d;font-weight:600}#app .honda-quality-cards .honda-premium-eligibility[data-premium-eligible=true]{background:#fff4c6;color:#735700}@media(max-width:1200px){#app .honda-quality .honda-quality-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){#app .honda-quality .honda-quality-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+#app .honda-quality-ranking .quality-metric-button.quality-metric-alert,#app .honda-quality-ranking .quality-metric-button.quality-metric-alert small{color:#c73535}#app .honda-quality-ranking .quality-metric-button.quality-metric-alert:hover{color:#a62222}
+
+.honda-wallet-tools{display:flex;align-items:end;flex-wrap:wrap;gap:14px;margin:14px 0}.honda-wallet-tools label{display:grid;gap:5px;font-size:11px;color:#687581}.honda-wallet-tools input,.honda-wallet-tools select{padding:8px 10px;border:1px solid #dde2e7;border-radius:6px;background:#fff;font-size:12px}.honda-wallet-tools>span{margin-left:auto;font-size:12px;color:#687581;padding-bottom:8px}#app .honda-wallet .exec-table-wrap,#app .honda-wallet table,#app .honda-wallet th,#app .honda-wallet td{background:#fff}#app .honda-wallet .exec-table-wrap{border:1px solid #e6e9ed;border-radius:7px;overflow:auto}#app .honda-wallet table{border-collapse:collapse;width:100%;margin:0}#app .honda-wallet th,#app .honda-wallet td{padding:9px 10px;border-bottom:1px solid #e6e9ed;border-right:1px solid #e6e9ed;text-align:left;vertical-align:middle;font-size:11px}#app .honda-wallet th:last-child,#app .honda-wallet td:last-child{border-right:0}#app .honda-wallet td>strong{font-size:11px;font-weight:600}#app .honda-wallet td small,#app .honda-wallet th small{display:block;color:#89929b;font-size:10px;margin-top:3px;font-weight:400}#app .honda-wallet td .wallet-overdue{color:#c73535}#app .honda-wallet .honda-draw-whatsapp{white-space:nowrap;color:#23965a;display:inline-flex;align-items:center;gap:5px;text-decoration:none}#app .honda-wallet .honda-draw-whatsapp svg{width:15px;height:15px;flex-shrink:0}.wallet-work-button{border:1px solid #ead68b;border-radius:5px;background:#fff8db;color:#735700;padding:5px 7px;font-size:10px;cursor:pointer;white-space:nowrap}.honda-wallet-note{font-size:10px;color:#89929b;line-height:1.5}.honda-wallet-dialog{width:min(650px,94vw)}.honda-wallet-client-facts{display:flex;gap:20px;flex-wrap:wrap;font-size:11px;color:#687581;margin-bottom:15px}.honda-wallet-client-facts b{display:block;color:#29313a;margin-top:4px}.honda-wallet-dialog form{display:grid;gap:12px}.honda-wallet-dialog form label,.wallet-upload-label{display:grid;gap:5px;font-size:11px;color:#687581}.honda-wallet-dialog form input,.honda-wallet-dialog form select,.honda-wallet-dialog textarea{width:100%;padding:8px 10px;border:1px solid #dde2e7;border-radius:6px;font-size:12px;background:#fff;box-sizing:border-box}.honda-wallet-dialog form .btn{justify-self:start}.honda-wallet-boleto{margin-top:18px;border-top:1px solid #e6e9ed;padding-top:14px}.honda-wallet-boleto h3{font-size:13px}.honda-wallet-boleto p{font-size:11px;color:#687581}.honda-wallet-boleto small{font-size:10px;line-height:1.5;color:#89929b}.honda-wallet-boleto-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.honda-wallet-boleto-actions .btn{font-size:11px;padding:7px 10px}.wallet-upload-label input{font-size:11px}
+
+/* Carteira: leitura compacta e prazos destacados sem carregar as linhas. */
+#app .honda-wallet table :is(th,td){text-align:left!important;padding:10px 12px!important;vertical-align:middle;border-radius:0!important;background:#fff!important}
+#app .honda-wallet table th{font-size:10px;color:#75808a;font-weight:500;line-height:1.4}
+#app .honda-wallet table td{font-size:11px;color:#29313a;line-height:1.45}
+#app .honda-wallet td>strong{font-size:12px;font-weight:600}
+#app .honda-wallet .honda-draw-whatsapp{color:#29313a;gap:7px}
+#app .honda-wallet .honda-draw-whatsapp svg{color:#23965a;width:17px;height:17px}
+#app .honda-wallet .honda-draw-whatsapp:hover span{text-decoration:underline}
+#app .honda-wallet .wallet-work-button{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:#4b5661;border-radius:4px;padding:4px 0;font-size:11px;font-weight:400;min-height:24px;box-shadow:none}
+#app .honda-wallet .wallet-work-button:hover{color:#20262c;text-decoration:underline}
+#app .honda-wallet .wallet-work-button:focus-visible{outline:2px solid #e7ba2c;outline-offset:3px}
+.wallet-stage-dot{width:5px;height:5px;border-radius:50%;background:#a6adb4;flex:none}.wallet-stage-needs-boleto{background:#d3a91e}.wallet-stage-boleto-sent{background:#6d8baa}.wallet-stage-paid{background:#23965a}.wallet-edit-arrow{font-size:17px;color:#9ca5ae;margin-left:3px}
+#app .honda-wallet .wallet-client-pre{color:#80631b;font-weight:500}
+#app .honda-wallet .wallet-due-date{display:block;font-weight:600;font-size:11px;white-space:nowrap}
+#app .honda-wallet td .wallet-contemplation{margin:0 0 4px;font-size:10px}
+.wallet-payment{display:inline-flex;font-size:9px;font-weight:500;line-height:1.5;padding:2px 6px;border-radius:4px;margin-top:4px;white-space:nowrap;background:#f1f3f5;color:#74808b}
+.wallet-payment-overdue{color:#b83d3d;background:#fff0ef}.wallet-payment-today{color:#856515;background:#fff6d6}.wallet-payment-current,.wallet-payment-paid{color:#287a50;background:#edf7f0}
+#app .honda-wallet table td:nth-child(3){font-variant-numeric:tabular-nums;white-space:nowrap}
+#app .honda-wallet table tbody tr:last-child td{border-bottom:0}
+
+/* Todas as colunas da carteira dentro da largura disponível. */
+#app .honda-wallet,#app .honda-wallet .exec-panel,#app .honda-wallet .exec-table-wrap{min-width:0;max-width:100%;box-sizing:border-box}
+#app .honda-wallet table{table-layout:fixed;width:100%!important;min-width:0!important}
+#app .honda-wallet table :is(th,td){min-width:0!important;white-space:normal!important;overflow-wrap:anywhere;padding:9px 8px!important}
+#app .honda-wallet table th:nth-child(1){width:22%}#app .honda-wallet table th:nth-child(2){width:12%}#app .honda-wallet table th:nth-child(3){width:11%}#app .honda-wallet table th:nth-child(4){width:13%}#app .honda-wallet table th:nth-child(5){width:15%}#app .honda-wallet table th:nth-child(6){width:13%}#app .honda-wallet table th:nth-child(7){width:14%}
+#app .honda-wallet .honda-draw-whatsapp,#app .honda-wallet .wallet-work-button{white-space:normal;max-width:100%;text-align:left}
+#app .honda-wallet .honda-draw-whatsapp span{overflow-wrap:anywhere}
+#app .honda-wallet .wallet-due-date,#app .honda-wallet .wallet-payment{white-space:normal}
+#app .honda-wallet .wallet-stage-dot{flex-shrink:0}
+@media(max-width:700px){#app .honda-wallet .exec-table-wrap{overflow-x:auto}#app .honda-wallet table{min-width:760px!important}}
+
+#app .quality-seller-history-button{border:0;padding:0;background:transparent;color:#29313a;font-size:11px;font-weight:600;text-align:left;cursor:pointer;text-decoration:underline;text-decoration-color:#dec450;text-underline-offset:3px}
+#app .quality-seller-history-button:hover{color:#8b6c00}#app .quality-seller-history-button:focus-visible{outline:2px solid #e3b60a;outline-offset:3px}
+.honda-seller-history{width:min(850px,94vw)}.quality-history-year{display:flex;align-items:center;gap:10px;font-size:12px;margin-bottom:16px}.quality-history-year input{width:85px;border:1px solid #dde2e7;border-radius:5px;padding:7px;background:#fff}
+#app .honda-seller-history table{width:100%;border-collapse:collapse;background:#fff}#app .honda-seller-history table :is(th,td){background:#fff;padding:10px 12px;text-align:left;border-bottom:1px solid #e6e9ed;border-right:1px solid #e6e9ed;font-size:12px}#app .honda-seller-history td small{display:block;font-size:10px;color:#89929b;margin-top:4px}#app .honda-seller-history .quality-metric-alert{color:#d34444}
+
+#app .honda-seller-history{width:min(1500px,96vw);max-width:96vw;box-sizing:border-box}
+#app .honda-seller-history .honda-quality-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#app .honda-seller-history .honda-quality-panel{padding:14px;min-width:0;background:#fff;border:1px solid #e6e9ed;border-radius:8px;box-sizing:border-box}
+#app .honda-seller-history .honda-quality-panel svg{display:block;width:100%;height:auto}
+#app .honda-seller-history .honda-quality-panel header{display:flex;align-items:center;gap:6px}
+#app .honda-seller-history .honda-quality-panel h2{font-size:13px}
+@media(max-width:850px){#app .honda-seller-history .honda-quality-grid{grid-template-columns:1fr}}
+
+.quality-history-controls{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-bottom:16px}.quality-history-controls .quality-history-year{margin-bottom:0}.quality-history-seller{display:flex;align-items:center;gap:10px;font-size:12px}.quality-history-seller select{border:1px solid #dde2e7;border-radius:5px;padding:7px 10px;background:#fff;max-width:min(320px,65vw);font-size:12px;color:#29313a}

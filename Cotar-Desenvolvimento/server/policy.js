@@ -1,0 +1,32 @@
+import {normalizeLead,leadSituation} from '../public/lead-utils.js';
+import {modules,roles,defaultScreens,normalizeRole,roleRank} from '../public/config.js';
+import {recordFromStorage} from './text-standardization.js';
+export const deny=(message='Você não tem permissão para esta ação.',status=403)=>{throw Object.assign(new Error(message),{status})};
+export const unpack=row=>{const data=recordFromStorage(typeof row.data==='string'?JSON.parse(row.data):row.data);return {...data,id:row.id,version:row.version,companyId:row.company_id,createdBy:row.created_by,createdAt:row.created_at,updatedAt:row.updated_at}};
+export async function companyData(db,companyId,kinds=Object.keys(modules)){
+ const global=typeof companyId==='object'&&companyId.role==='Administrador'&&companyId.companyAccessAll===true;companyId=typeof companyId==='object'?companyId.companyId:companyId;
+ if(kinds.some(kind=>!Object.hasOwn(modules,kind)))deny('Tabela inválida.',400);
+ const grouped=!global&&typeof db.readCompanyTables==='function'?await db.readCompanyTables(companyId,kinds):Object.fromEntries(await Promise.all(kinds.map(async kind=>[kind,(await db.prepare(`SELECT * FROM ${kind}${global?'':' WHERE company_id=?'} ORDER BY created_at DESC`).bind(...(global?[]:[companyId])).all()).results])));
+ return Object.fromEntries(kinds.map(kind=>[kind,grouped[kind].map(r=>kind==='leads'?normalizeLead(unpack(r)):unpack(r))]));
+}
+export const permittedScreens=u=>(u.role==='Administrador'?defaultScreens(u.role):defaultScreens(u.role).filter(s=>Array.isArray(u.screens)&&u.screens.includes(s))).filter(s=>(!Array.isArray(u.platformScreens)||u.platformScreens.includes(s))&&(!Array.isArray(u.platformStoreScreens)||u.platformStoreScreens.includes(s)));
+export function inScope(actor,kind,row,all){actor={...actor,role:normalizeRole(actor.role)};if(!row||!actor.companyId)return false;if(actor.role==='Administrador'&&actor.companyAccessAll===true)return true;if(row.companyId!==actor.companyId)return false;if(actor.role==='Administrador')return true;const storeFor=r=>all.stores.find(s=>s.id===(r.storeId||r.id));const regionFor=s=>all.regions.find(r=>r.id===s?.regionId);let store,region,group;
+if(kind==='companies')return false;
+if(kind==='groups'){group=row.id;return actor.role==='Diretor'&&group===actor.groupId}
+if(kind==='regions'){region=row.id;group=row.groupId;return actor.role==='Diretor'?group===actor.groupId:actor.role==='Gerente Regional'?region===actor.regionId:false}
+store=kind==='stores'?row:storeFor(row);region=regionFor(store);group=region?.groupId;
+if(actor.role==='Diretor')return group===actor.groupId;
+if(actor.role==='Gerente Regional')return region?.id===actor.regionId;
+if(['Gerente de Loja','Administrativo'].includes(actor.role))return store?.id===actor.storeId;
+if(actor.role==='Supervisor'){if(kind==='teams')return row.id===actor.teamId;if(kind==='users')return row.id===actor.id||!!actor.teamId&&row.teamId===actor.teamId&&row.storeId===actor.storeId;if(kind==='stores')return row.id===actor.storeId;const owner=all.users.find(u=>u.id===(row.userId||row.createdBy));return !!actor.teamId&&owner?.teamId===actor.teamId&&store?.id===actor.storeId;}
+if(actor.role==='Vendedor'){if(kind==='users')return row.id===actor.id;if(kind==='stores')return row.id===actor.storeId;if(kind==='teams')return row.id===actor.teamId;return row.storeId===actor.storeId&&(['leads','sales','assessments'].includes(kind)?row.userId===actor.id:row.createdBy===actor.id)}return false;}
+export function canManage(actor,target,all){actor={...actor,role:normalizeRole(actor.role)};target={...target,role:normalizeRole(target.role)};if(!roles.includes(actor.role)||!roles.includes(target.role))return false;return target.id!==actor.id&&inScope(actor,'users',target,all)&&(roleRank(target.role)>roleRank(actor.role)||(actor.role==='Administrador'&&target.role==='Administrador'));}
+export const canSubmitSale=actor=>permittedScreens(actor).includes('leads')&&(actor.role==='Vendedor'||permittedScreens(actor).includes('sales'));
+export function authorize(actor,kind,row,all,action){if(!permittedScreens(actor).includes(kind)&&!(kind==='sales'&&action==='create'&&canSubmitSale(actor)))deny('Esta tela não está liberada para seu usuário.');if(!inScope(actor,kind,row,all))deny('Registro fora do seu alcance.');if(kind==='users'&&!canManage(actor,row,all))deny('Você só pode gerenciar cargos subordinados dentro do seu alcance.');if(action==='delete'&&actor.role==='Vendedor'&&['leads','sales'].includes(kind))deny('Vendedores não podem excluir leads ou vendas.');if(kind==='companies'&&action==='delete')deny('A empresa não pode ser excluída por esta tela.');}
+export function projection(actor,all){const allowed=permittedScreens(actor),records={},lookups={};for(const [kind,rows] of Object.entries(all)){const visible=rows.filter(r=>inScope(actor,kind,r,all));records[kind]=allowed.includes(kind)?visible.map(r=>{const {cpf,...safe}=r;return kind==='vehicles'?{...r,isSold:all.sales.some(s=>s.vehicleId===r.id&&s.status==='Concluída')}:kind==='users'?{...safe,canManage:canManage(actor,r,all)}:kind==='leads'?{...r,situation:leadSituation(r)}:r}):[];lookups[kind]=visible.map(r=>({id:r.id,name:r.name,state:kind==='stores'?r.state:undefined,nickname:kind==='users'?r.nickname:undefined,plate:r.plate,storeId:r.storeId,regionId:r.regionId,groupId:r.groupId,teamId:r.teamId,role:kind==='users'?r.role:undefined}));}
+if(!allowed.includes('sales'))lookups.sales=[];
+if(!allowed.includes('leads'))lookups.leads=lookups.leads.filter(l=>records.sales.some(s=>s.leadId===l.id));
+// Only names/IDs in the user's own organizational lineage are needed for restricted selectors.
+for(const kind of ['groups','regions']){const id=kind==='groups'?actor.groupId:actor.regionId;const row=all[kind].find(r=>r.id===id);if(row&&!lookups[kind].some(r=>r.id===id))lookups[kind].push({id:row.id,name:row.name,groupId:row.groupId});}
+const dashboardSales=actor.role==='Vendedor'&&allowed.includes('painel')?all.sales.filter(s=>inScope(actor,'sales',s,all)&&s.userId===actor.id).map(s=>({id:s.id,saleCode:s.saleCode,leadId:s.leadId,storeId:s.storeId,date:s.date,createdAt:s.createdAt,customerName:s.customerName||s.leadSnapshot?.name||'',model:s.model||s.leadSnapshot?.model||'',modality:s.modality,amount:s.amount,status:s.status})):[];
+return {records,lookups,dashboardSales,permissions:{screens:allowed,canSubmitSale:canSubmitSale(actor),canDeleteLeads:actor.role!=='Vendedor',canDeleteSales:actor.role!=='Vendedor'}}}

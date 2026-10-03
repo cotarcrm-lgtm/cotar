@@ -1,0 +1,15 @@
+node_modules/
+.sites-runtime/
+.env
+
+server/assets.generated.js
+
+.env.*
+!.env.example
+.dev-data/
+dist/
+*.pem
+*.key
+*.p12
+*.sqlite*
+supabase/.temp/

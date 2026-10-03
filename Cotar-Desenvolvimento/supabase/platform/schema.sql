@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS cotar.support_tickets (id text PRIMARY KEY, company_id text, user_id text, email text NOT NULL, name text NOT NULL, whatsapp text NOT NULL DEFAULT '', subject text NOT NULL, category text NOT NULL, priority text NOT NULL DEFAULT 'NORMAL', status text NOT NULL DEFAULT 'ABERTO', version integer NOT NULL DEFAULT 1, created_at text NOT NULL, updated_at text NOT NULL);
+CREATE INDEX IF NOT EXISTS support_tickets_owner ON cotar.support_tickets(user_id,updated_at);
+CREATE INDEX IF NOT EXISTS support_tickets_status ON cotar.support_tickets(status,updated_at);
+CREATE TABLE IF NOT EXISTS cotar.support_messages (id text PRIMARY KEY, ticket_id text NOT NULL REFERENCES cotar.support_tickets(id), author_id text, author_name text NOT NULL, staff integer NOT NULL DEFAULT 0, body text NOT NULL, attachments text NOT NULL DEFAULT '[]', created_at text NOT NULL);
+CREATE INDEX IF NOT EXISTS support_messages_ticket ON cotar.support_messages(ticket_id,created_at);
+CREATE TABLE IF NOT EXISTS cotar.platform_activity (user_id text NOT NULL, company_id text NOT NULL, day text NOT NULL, last_seen text NOT NULL, PRIMARY KEY(user_id,day));
+CREATE INDEX IF NOT EXISTS platform_activity_seen ON cotar.platform_activity(last_seen);
+CREATE TABLE IF NOT EXISTS cotar.platform_audit (id text PRIMARY KEY, actor_id text NOT NULL, action text NOT NULL, target_id text NOT NULL, reason text NOT NULL, created_at text NOT NULL);
+CREATE TABLE IF NOT EXISTS cotar.platform_reset_tokens (token_hash text PRIMARY KEY, user_id text NOT NULL REFERENCES cotar.users(id), created_by text NOT NULL, expires_at bigint NOT NULL, created_at text NOT NULL);
+ALTER TABLE cotar.support_tickets ENABLE ROW LEVEL SECURITY;
+ALTER TABLE cotar.support_messages ENABLE ROW LEVEL SECURITY;
+ALTER TABLE cotar.platform_activity ENABLE ROW LEVEL SECURITY;
+ALTER TABLE cotar.platform_audit ENABLE ROW LEVEL SECURITY;
+ALTER TABLE cotar.platform_reset_tokens ENABLE ROW LEVEL SECURITY;
+REVOKE ALL ON cotar.support_tickets,cotar.support_messages,cotar.platform_activity,cotar.platform_audit,cotar.platform_reset_tokens FROM anon,authenticated;
