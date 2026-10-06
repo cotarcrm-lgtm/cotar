@@ -1,3 +1,4 @@
+import {customerStaticRoute} from '../public/customer-routes.js';
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -39,7 +40,7 @@ http.createServer(async(req,res)=>{try{
   headers.set('oai-authenticated-user-email','admin@example.test');
   response=await app.fetch(new Request(url,{method:req.method,headers,body:['GET','HEAD'].includes(req.method)?undefined:Buffer.concat(chunks)}),env);
  }else{
-  const name=routes(url.pathname);const file=path.resolve('public','.'+name),base=path.resolve('public');
+  const customerRoute=customerStaticRoute(url.pathname);if(customerRoute?.manifest){res.writeHead(200,{'Content-Type':'application/manifest+json'});res.end(JSON.stringify(customerRoute.manifest));return;}const name=customerRoute?.asset||routes(url.pathname);const file=path.resolve('public','.'+name),base=path.resolve('public');
   if(!file.startsWith(base+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile())response=new Response('Not found',{status:404});
   else response=new Response(req.method==='HEAD'?null:fs.readFileSync(file),{headers:{'Content-Type':(types[path.extname(file)]||'application/octet-stream')+'; charset=utf-8','Cache-Control':'no-cache'}});
  }
